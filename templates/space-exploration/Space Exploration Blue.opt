@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Space Exploration Blue</name>
+    <description>Space exploration template (tiles, blue)</description>
+    <webhelp>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="color">blue</tag>
+        </tags>
+        <preview-image file="img/space-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="light.css"/>
+            <css file="space.css"/>
+            <logo file="img/RocketLogo.png"/>
+            <fileset>
+                <include name="img/space_bgr.png"/>
+            </fileset>
+        </resources>
+    </webhelp>
+</publishing-template>
