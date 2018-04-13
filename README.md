@@ -1,4 +1,4 @@
-# oxygen-publishing-template-samples
+# Oxygen Publishing Template Samples
 Project containing various examples of Oxygen Publishing Templates.
 
 This is a demo project that introduces the concept of the Oxygen Webhelp [Publishing Template](https://www.oxygenxml.com/doc/ug-editor/topics/whr-publishing-template.html) that defines all aspects of the layout and
@@ -17,3 +17,12 @@ various resources. The descriptor file controls the template package by defining
 other resources in the package.
 ![Publishing Template package](resources/PubTemplatePackage.png)
 
+# Publishing Templates examples:
+* [Space Exploration](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Space-Exploration) - This is the template used for the Oxygen WebHelp Publishing Template [presentation video](https://www.youtube.com/watch?v=Q0rZy1oyyUk).
+
+# Project layout
+This project has the following layout:
+- **dita** - Contains a DITA map samples that can be published with the available templates.
+- **templates** - The [Publishing Templates Gallery](https://www.oxygenxml.com/doc/ug-editor/topics/whr-pt-feature-gallery.html) stored at project level
+- **resources** - Project miscellaneous resources
+- **oxygen-publishing-template-samples.xpr** - Oxygen project file
