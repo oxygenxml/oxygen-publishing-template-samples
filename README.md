@@ -22,7 +22,7 @@ other resources in the package.
 
 # Project layout
 This project has the following layout:
-- **dita** - Contains a DITA map samples that can be published with the available templates.
+- **dita** - Contains DITA map samples that can be published with the available templates.
 - **templates** - The [Publishing Templates Gallery](https://www.oxygenxml.com/doc/ug-editor/topics/whr-pt-feature-gallery.html) stored at project level
 - **resources** - Project miscellaneous resources
 - **oxygen-publishing-template-samples.xpr** - Oxygen project file
