@@ -15,5 +15,5 @@ The possible benefits for using the publishing template package include:
 Each WebHelp Responsive publishing template is a package that contains a [descriptor](https://www.oxygenxml.com/doc/versions/20.0/ug-editor/topics/whr_publishing_template_contents.html#ariaid-title2) file and
 various resources. The descriptor file controls the template package by defining the references to the
 other resources in the package.
-![Publishing Template package](https://github.com/balasaalin/space-exploration/blob/master/resources/PubTemplatePackage.png)
+![Publishing Template package](resources/PubTemplatePackage.png)
 
