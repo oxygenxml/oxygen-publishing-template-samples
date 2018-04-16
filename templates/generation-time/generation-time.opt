@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>Generation Date &amp; Time</name>
-    <description>Template containing XSLT extensions that adds the generation date &amp; time to the WebHelp Responsive footer.</description>
+    <description>Template containing XSLT extensions that add the generation date &amp; time to the WebHelp Responsive footer.</description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <parameters>
