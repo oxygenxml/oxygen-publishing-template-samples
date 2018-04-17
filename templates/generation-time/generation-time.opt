@@ -22,10 +22,10 @@
             </fileset>
         </resources>
         <xslt>
-            <extension file="xslt/customMainPage.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
-            <extension file="xslt/customDita2webhelp.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
-            <extension file="xslt/customSearchPage.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
-            <extension file="xslt/customIndexTermsPage.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
+            <extension file="xslt/generation-time.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xslt/generation-time.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xslt/generation-time.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xslt/generation-time.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
         </xslt>
         <tags>
             <tag type="layout">tiles</tag>
