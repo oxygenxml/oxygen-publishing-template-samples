@@ -16,9 +16,11 @@ other resources in the package.
 ![Publishing Template package](resources/PubTemplatePackage.png)
 
 # Publishing Templates examples:
-* [Space Exploration](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Space-Exploration) - This is the template used for the Oxygen WebHelp Publishing Template [presentation video](https://www.youtube.com/watch?v=Q0rZy1oyyUk).
-* [Generation Date & Time](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Generation-Date-&-Time) - Template containing XSLT extensions that add the generation date & time to the WebHelp Responsive footer.
-* [Bookmap Copyright Info](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Bookmap-Copyright-Info) - Template containing XSLT extensions that can transfer meta information specified in the DITA map to the WebHelp Responsive footer.
+* #### Getting started:
+  * [Space Exploration](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Space-Exploration) - This is the template used for the Oxygen WebHelp Publishing Template [presentation video](https://www.youtube.com/watch?v=Q0rZy1oyyUk).
+* #### Footer customizations:
+  * [Generation Date & Time](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Generation-Date-&-Time) - Template containing XSLT extensions that add the generation date & time to the WebHelp Responsive footer.
+  * [Bookmap Copyright Info](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Bookmap-Copyright-Info) - Template containing XSLT extensions that can transfer meta information specified in the DITA map to the WebHelp Responsive footer.
 
 # Project layout
 This project has the following layout:
