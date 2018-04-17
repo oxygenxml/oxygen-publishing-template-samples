@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Bookmap Copyright Info</name>
+    <description>Template containing XSLT extensions that can transfer meta information specified in the DITA map to the WebHelp Responsive footer.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <xslt>
+            <extension file="xslt/copyright-info.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xslt/copyright-info.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xslt/copyright-info.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xslt/copyright-info.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
+        </xslt>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">copyright meta</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
