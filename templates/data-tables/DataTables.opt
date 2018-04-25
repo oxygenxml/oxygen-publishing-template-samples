@@ -16,6 +16,7 @@ https://datatables.net/</description>
         </parameters>
         <resources>
             <css file="ashes.css"/>
+            <!-- Uncomment the following lines in order to use a local version of the DataTables library. -->
             <!--<fileset>
                 <include name="DataTables/**/*"/>
             </fileset>-->
