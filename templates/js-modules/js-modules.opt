@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>JS AMD Modules</name>
+    <description>Inserts in the output a JavaScript module that uses the Asynchronous Module Definition (AMD) format.</description>
+    <webhelp>
+        <preview-image file="js-modules.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.enable.template.js.module.loading" value="yes"/>
+        </parameters>
+        <resources>
+            <css file="js-modules.css"/>
+            <js-amd-module file="js/template-main.js"/>
+            <fileset>
+                <include name="js/*.js"/>
+            </fileset>
+        </resources>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">js modules</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
