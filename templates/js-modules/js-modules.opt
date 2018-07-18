@@ -13,7 +13,7 @@
             <css file="js-modules.css"/>
             <js-amd-module file="js/template-main.js"/>
             <fileset>
-                <include name="js/*.js"/>
+                <include name="js/**/*.js"/>
             </fileset>
         </resources>
         <tags>
