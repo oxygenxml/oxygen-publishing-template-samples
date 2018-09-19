@@ -21,6 +21,7 @@ other resources in the package.
 * #### Footer customizations:
   * [Generation Date & Time](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Generation-Date-&-Time) - Template containing XSLT extensions that add the generation date & time to the WebHelp Responsive footer.
   * [Bookmap Copyright Info](https://github.com/balasaalin/oxygen-publishing-template-samples/wiki/Bookmap-Copyright-Info) - Template containing XSLT extensions that can transfer meta information specified in the DITA map to the WebHelp Responsive footer.
+  * Bookmap Copyright Info (Macros) - Template using macros to transfer meta information specified in the DITA map to the WebHelp Responsive footer.
 * #### How-tos:
   * [JavaScript AMD Modules](https://github.com/oxygenxml/oxygen-publishing-template-samples/wiki/JavaScript-AMD-Modules) - Demo on how to include JavaScript AMD modules in a Publishing Template.  
 
