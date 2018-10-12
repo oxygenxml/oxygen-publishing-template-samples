@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic-1.1">
+    <title>Topic 1.3</title>
+    <shortdesc>Short description for Topic 1.3.</shortdesc>
+    <body>
+        <p>Topic 1.3 content</p>
+    </body>
+</topic>
