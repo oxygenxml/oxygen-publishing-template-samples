@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>Bookmap Copyright Info (Macros)</name>
-    <description>Template containing using macros to transfer meta information specified in the DITA map to the WebHelp Responsive footer.</description>
+    <description>Template using macros to transfer meta information specified in the DITA map to the WebHelp Responsive footer.</description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <parameters>
