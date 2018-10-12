@@ -31,3 +31,10 @@ This project has the following layout:
 - **templates** - The [Publishing Templates Gallery](https://www.oxygenxml.com/doc/ug-editor/topics/whr-pt-feature-gallery.html) stored at project level
 - **resources** - Project miscellaneous resources
 - **oxygen-publishing-template-samples.xpr** - Oxygen project file
+
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
+This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/oxygen-publishing-template-samples/blob/master/LICENSE)
+
