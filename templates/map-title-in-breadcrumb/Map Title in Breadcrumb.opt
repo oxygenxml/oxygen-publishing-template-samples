@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Map Title in Breadcrumb</name>
+    <description></description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <html-page-layout-files>
+            <page-layout-file page="search" file="page-templates/wt_search.html"/>
+            <page-layout-file page="topic" file="page-templates/wt_topic.html"/>
+            <page-layout-file page="index-terms" file="page-templates/wt_terms.html"/>
+            <page-layout-file page="main" file="page-templates/wt_index.html"/>
+        </html-page-layout-files>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="breadcrumb.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/oxygen/</online-preview-url>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="color">blue</tag>
+            <tag type="color">light</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

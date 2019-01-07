@@ -1,0 +1,16 @@
+.map-title {
+    font-size: .9em;
+    padding-left: 8px;
+}
+
+.map-title a {
+    color: #878787;
+}
+
+.wh_breadcrumb ol { 
+    padding-left: 0;
+}
+
+.wh_breadcrumb .home {
+    display: none;
+}

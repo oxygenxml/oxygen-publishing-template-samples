@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Search Results</title>
+        <script type="text/javascript" src="${oxygen-webhelp-assets-dir}/lib/jquery/jquery-3.1.1.min.js"><!----></script>
+
+        <link rel="stylesheet"
+            href="${oxygen-webhelp-assets-dir}/lib/jquery-ui/jquery-ui.min.css" />
+
+        <!-- Latest compiled and minified Bootstrap CSS -->
+        <link rel="stylesheet" href="${oxygen-webhelp-assets-dir}/lib/bootstrap/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" type="text/css"
+              href="${oxygen-webhelp-assets-dir}/app/search-page.css?buildId=${oxygen-webhelp-build-number}" />
+        
+        <style>
+            .wh_search_results {
+                min-height: 40%;
+            }
+        </style>
+
+        <script data-main="${oxygen-webhelp-assets-dir}/app/search-page.js"
+                src="${oxygen-webhelp-assets-dir}/lib/requirejs/require.js"></script>
+        
+        <!-- Skin resources -->
+        <whc:webhelp_skin_resources/>
+        <!-- EXM-36950 - Expand the args.hdf parameter here -->
+        <whc:include_html href="${args.hdf}"/>
+        <whc:include_html href="${webhelp.fragment.head}"/>
+    </head>
+    <body class="wh_search_page">
+        <a href="#results" class="sr-only sr-only-focusable"><whc:macro value="${i18n(jump.to.results)}" /></a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        <whc:include_html href="${args.hdr}"/>
+        <whc:include_html href="${webhelp.fragment.before.body}"/>
+        
+        <whc:include_html href="${webhelp.fragment.header}"/>
+        
+        <!-- Search form -->
+        <whc:webhelp_search_input class="navbar-form search" role="form"/>
+        <div class="container-fluid wh_content_area" id="results">
+            <div class="row">
+                <whc:webhelp_search_results class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="searchResults"/>
+                <div id="wh-search-pagination" class="wh-search-pagination col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+            </div>
+        </div>
+        
+        <whc:include_html href="footer.xml"/>
+        
+        <whc:include_html href="${webhelp.fragment.after.body}"/>
+    </body>
+    <whc:include_html href="${webhelp.google.search.script}"/> 
+</html>
