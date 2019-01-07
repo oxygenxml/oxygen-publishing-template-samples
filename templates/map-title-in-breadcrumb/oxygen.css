@@ -264,7 +264,7 @@ Example:
 .wh_search_button{
     border: solid 1px #CCC;
     border-radius: 0 5px 5px 0;
-    padding: 0.6em 1em;
+    padding: 0 .5em;
     color:#fff;
     background-color: #C93416;
     height: 2.8em;
@@ -477,23 +477,6 @@ Example:
 .searchresult li .relativePath a {
     color: #006621;
 }
-
-/*--------- Search results breadcrumb ----------*/
-.search-breadcrumb li a {
-    background: #ECF2F9;
-}
-.search-breadcrumb li .title:before,
-.search-breadcrumb li .title:after {
-    border-color: #ECF2F9;
-}
-.search-breadcrumb li .title:before {
-    border-left-color: transparent;
-}
-.search-breadcrumb li .title:after {
-    border-color: transparent;
-    border-left-color: #ECF2F9;
-}
-
 
 /*
  * ------------------------------------------------------------------
