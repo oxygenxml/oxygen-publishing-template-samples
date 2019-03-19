@@ -14,6 +14,7 @@
         </parameters>
         <resources>
             <css file="oxygen.css"/>
+            <css file="footer.css"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
