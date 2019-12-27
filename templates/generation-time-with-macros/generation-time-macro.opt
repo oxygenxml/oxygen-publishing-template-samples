@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Generation Date &amp; Time (Macros)</name>
+    <description>Template to add the generation date &amp; time to the WebHelp Responsive footer using $timestamp macro.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment file="fragment/footer.xml" placeholder="webhelp.fragment.footer"/>
+        </html-fragments>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">whc:macro</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
