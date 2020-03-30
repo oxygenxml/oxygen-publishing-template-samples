@@ -1,0 +1,15 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  background: #000;
+  justify-content: space-around;
+}
+
+.header-logo {
+    padding: 4px;
+}
+
+#searchForm > div {
+  margin: auto 50px auto auto;
+  width: 200px;
+}

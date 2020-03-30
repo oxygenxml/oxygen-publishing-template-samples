@@ -1,0 +1,19 @@
+<div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="header-container">
+    <div class="header-left">
+        <div class="header-logo logo-left">
+            <a href="${param(template.left.logo.target.url)}" target="_blank">
+                <img src="${path(oxygen-webhelp-template-dir)}/${param(template.left.logo.img)}"/>
+            </a>
+        </div>
+    </div>
+    <div class="header-middle">
+        <whc:include_html href="${param(webhelp.default.fragment.header)}"/>
+    </div>
+    <div class="header-right">
+        <div class="header-logo logo-right">
+            <a href="${param(template.right.logo.target.url)}" target="_blank">
+                <img src="${path(oxygen-webhelp-template-dir)}/${param(template.right.logo.img)}"/>
+            </a>
+        </div>
+    </div>
+</div>

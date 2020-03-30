@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Two Logos Template</name>
+    <description>Publishing template that adds a second logo (e.g. company logo) in top-right corner.</description>
+    <webhelp>
+        <preview-image file="oxygen-tree.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="no"/>
+            <parameter name="webhelp.show.main.page.toc" value="yes"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.copycss" value="yes"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="clean.output" value="yes"/>
+            <parameter name="clean.temp" value="no"/>
+            <parameter name="force-unique" value="true"/>
+            <parameter name="webhelp.show.child.links" value="yes"/>
+            
+            <!-- Customization related params -->
+            <!-- Use this parameter to point to the initial header.xml file -->
+            <parameter name="webhelp.default.fragment.header" value="header.xml"/>
+            <!-- Use this parameter to point to the custom header to be used in each page -->
+            <parameter name="webhelp.fragment.header" value="header-container-fragment.xml" type="filePath"/>
+            <!-- Pair of parameters to specify the logos and their target URLs -->
+            <parameter name="template.left.logo.target.url" value="https://www.oxygenxml.com/xml_webhelp.html"/>
+            <parameter name="template.right.logo.target.url" value="https://www.oxygenxml.com"/>
+            <parameter name="template.left.logo.img" value="logos/left-logo.png"/>
+            <parameter name="template.right.logo.img" value="logos/right-logo.png"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <!-- Provide custom style rules -->
+            <css file="two-logos.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+            <!-- Copy the logo images in the output directory -->
+            <fileset>
+                <include name="logos/**/*"/>
+            </fileset>
+        </resources>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tree/oxygen/</online-preview-url>
+        <tags>
+            <tag type="layout">tree</tag>
+            <tag type="color">blue</tag>
+            <tag type="color">light</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
