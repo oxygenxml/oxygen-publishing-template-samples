@@ -1,5 +1,6 @@
 # Two Logos Temeplate
 This template adds a logo image to each side of the HTML page header. 
+
 ![../../resources/2logos.png](../../resources/2logos.png)
 
 For each logo you can configure the image path and the target URL usinga set of parameters defined in this Publishing Template's descriptor file:
