@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns:whc="http://www.oxygenxml.com/webhelp/components">
+    <script>
+        var totalPages = <whc:macro value="${map-xpath(count(//*[contains(@class, 'map/topicref')]))}"/>;
+        console.log("totalPages: ", totalPages);
+    </script>    
+</div>
