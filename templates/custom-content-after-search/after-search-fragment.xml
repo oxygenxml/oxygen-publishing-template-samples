@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div class="language-container">
-    <label class="lang-label" for="languages">Language:</label>
-    <select id="languages" class="lang-selector">
-        <option value="en" selected="true">English</option>
-        <option value="fr">Français</option>
-        <option value="es">Español</option>
-        <option value="de">Deutsch</option>
-    </select>
-    
+<div class="after-search">
+    <div class="language-container">
+        <label class="lang-label" for="languages">Language:</label>
+        <select id="languages" class="lang-selector">
+            <option value="en" selected="true">English</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+            <option value="de">Deutsch</option>
+        </select>  
+    </div>
 </div>

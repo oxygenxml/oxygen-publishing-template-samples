@@ -12,15 +12,13 @@
         <div class="custom-search-component">
             <!-- Apply default processing -->
             <xsl:next-match/>
-            <!-- Output your content here -->
-            <div class="after-search">
-                <xsl:variable name="afterSearchContentFragment" select="oxyf:getParameter('custom.webhelp.after.search.fragment')"/> 
-                
-                <xsl:call-template name="extractFileContent">
-                    <xsl:with-param name="href" select="$afterSearchContentFragment"/>
-                    <xsl:with-param name="template_base_uri" select="$template_base_uri"/>
-                </xsl:call-template>
-            </div>
+            <!-- Output the HTML Fragment -->
+            <xsl:variable name="afterSearchContentFragment" 
+                select="oxyf:getParameter('custom.webhelp.after.search.fragment')"/> 
+            <xsl:call-template name="extractFileContent">
+                <xsl:with-param name="href" select="$afterSearchContentFragment"/>
+                <xsl:with-param name="template_base_uri" select="$template_base_uri"/>
+            </xsl:call-template>
         </div>
     </xsl:template>
 </xsl:stylesheet>
