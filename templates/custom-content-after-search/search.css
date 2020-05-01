@@ -1,0 +1,22 @@
+.custom-search-component {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.wh_search_input {
+  padding: 0 !important;
+  background: none !important;
+  min-width: 300px;
+  margin: 0 !important;
+}
+
+#searchForm > div {
+  margin: 0;
+  width: initial;
+}
+
+.after-search {
+  padding-left: 10px;
+}
