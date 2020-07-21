@@ -1,6 +1,6 @@
 # Custom Content After Search Template
 
-This is a smaple publishing template that contributes custom HTML content after the search input.
+This is a sample publishing template that contributes custom HTML content after the search input.
 
 ![Output Sample](search.png)
 
@@ -11,7 +11,7 @@ The XSLT extension loads the
 [HTML Fragment](https://www.oxygenxml.com/doc/versions/22.0/ug-webhelp-responsive/topics/wh-add-custom-html.html#wh-add-custom-html__the_xml_file) that needs to be inserted in the output page from an XML file (`after-search-fragment.xml`)  using a custom transformation parameter (`custom.webhelp.after.search.fragment`) defined in the 
 [Publishing Template's Descriptor File](https://www.oxygenxml.com/doc/versions/22.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title2) (\*.opt).
 
-THe XSLT extension:
+The XSLT extension:
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"

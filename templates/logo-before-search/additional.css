@@ -1,0 +1,16 @@
+#searchForm > div {
+    display: flex;
+    align-items: center;
+}
+
+.logo_container {
+    padding: 0 10px;
+}
+
+.input_container {
+    width:100%;
+}
+
+.wh_search_button {
+    top: initial;
+}

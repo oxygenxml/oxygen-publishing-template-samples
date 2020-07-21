@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
-    <name>Custom Content After Search</name>
+    <name>logo-before-search</name>
     <description></description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
@@ -9,22 +9,20 @@
             <parameter name="webhelp.show.main.page.toc" value="no"/>
             <parameter name="webhelp.top.menu.depth" value="3"/>
             <parameter name="args.figurelink.style" value="TITLE"/>
-            <parameter name="args.gen.task.lbl" value="YES"/>
             <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="clean.output" value="yes"/>
+            <parameter name="clean.temp" value="no"/>
             <parameter name="force-unique" value="true"/>
-            <parameter name="webhelp.show.child.links" value="yes"/>
-            <!-- AFTER SEARCH FRAGMENT param - expanded in 'xsl/custom-content-after-search.xsl'  -->
-            <parameter name="custom.webhelp.after.search.fragment" value="after-search-fragment.xml" type="filePath"/>
         </parameters>
         <xslt>
-            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
-            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
-            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xsl/logo-before-search.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xsl/logo-before-search.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xsl/logo-before-search.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
         </xslt>
         <resources>
             <css file="oxygen.css"/>
-            <css file="search.css"/>
-            <css file="custom.css"/>
+            <css file="additional.css"/>
+            <logo file="resources/logo/oxygen190x62_dark.png"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
