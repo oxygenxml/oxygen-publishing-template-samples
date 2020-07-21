@@ -1,4 +1,4 @@
-# Custom Content After Search Template
+# Logo Before Search Template
 
 This is a sample publishing template that displays the [Logo component](https://www.oxygenxml.com/doc/versions/22.1/ug-webhelp-responsive/topics/webhelp-customization-add-image-to-title.html) before the search input.
 
