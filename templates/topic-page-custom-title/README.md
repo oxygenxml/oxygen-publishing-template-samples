@@ -1,6 +1,7 @@
 # Custom Static Title for Topic Pages
 
 This is a sample publishing template that overrides the default `html/title` element for each topic page and generates a title element with custom static content.
+
 ![Output Sample](custom-page-title.png)
 
 It uses an 
@@ -15,7 +16,6 @@ The XSLT extension:
     version="3.0">
     
     <xsl:template name="generateChapterTitle">
-        <!-- Title processing - special handling for short descriptions -->
         <title>Custom title</title>
     </xsl:template>
 </xsl:stylesheet>
