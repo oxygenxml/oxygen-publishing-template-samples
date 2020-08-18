@@ -5,7 +5,7 @@ This is a sample publishing template that generates a prefix for the `head/title
 ![Output Sample](topic-page-title-prefix.png)
 
 It uses an 
-[XSLT Extension](https://www.oxygenxml.com/doc/versions/22.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to generate the custom page title.
+[XSLT Extension](https://www.oxygenxml.com/doc/versions/22.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to generate the page title prefix.
 
 The XSLT extension:
 ```
