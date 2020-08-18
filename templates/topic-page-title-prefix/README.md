@@ -1,4 +1,4 @@
-# Custom Static Title for Topic Pages
+# Prefix for each Topic Page Title
 
 This is a sample publishing template that generates a prefix for the `head/title` element of each topic page.
 
@@ -15,8 +15,8 @@ The XSLT extension:
     exclude-result-prefixes="xs math"
     version="3.0">
     
-    <xsl:template name="generateChapterTitle">
-        <title>Custom title</title>
+    <xsl:template name="gen-user-panel-title-pfx">
+        <xsl:text>[Title prefix] - </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
 ```
