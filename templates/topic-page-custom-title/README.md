@@ -1,6 +1,6 @@
 # Custom Static Title for Topic Pages
 
-This is a sample publishing template that overrides the default `html/title` element for each topic page and generates a title element with custom static content.
+This is a sample publishing template that overrides the default `head/title` element for each topic page and generates a title element with custom static content.
 
 ![Output Sample](custom-page-title.png)
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>Custom Topic Page Title</name>
-    <description>Overrides the default html/title element for each topic page and generates a title element with custom static content.</description>
+    <description>Overrides the default head/title element for each topic page and generates a title element with custom static content.</description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <parameters>
