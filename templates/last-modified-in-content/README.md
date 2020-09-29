@@ -1,4 +1,4 @@
-# Logo Before Search Template
+# Last modified date & time after the topic content
 
 This is a sample publishing template that displays the last modified date and time of the source topic.
 
