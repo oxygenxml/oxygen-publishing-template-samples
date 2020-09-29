@@ -1,6 +1,6 @@
 # Logo Before Search Template
 
-This is a sample publishing template that displays after the topic content the last modified date and time of the source topic.
+This is a sample publishing template that displays the last modified date and time of the source topic.
 
 ![Output Sample](media/result.png)
 
