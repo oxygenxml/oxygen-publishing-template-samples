@@ -1,0 +1,9 @@
+.last-modified {
+    font-size:0.75em;
+    font-weight:bold;
+    text-align:center;
+}
+.last-modified::before {
+  content: "Last modified: ";
+  font-weight: normal;
+}

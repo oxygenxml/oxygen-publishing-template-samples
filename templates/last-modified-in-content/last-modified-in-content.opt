@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>last-modified-in-content</name>
+    <description>Adds  a custom XSLT file to insert last modifed date anf time at the end of each topic.
+Uses the file:last-modified() XSLT function to extract that information directly from the DITA source file itself.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="force-unique" value="true"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="last-modified-in-content.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <xslt>
+            <extension file="last-modified-in-content.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/oxygen/</online-preview-url>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="color">blue</tag>
+            <tag type="color">light</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
