@@ -13,7 +13,7 @@ The XSLT extension uses the
 **NOTE:** According the Saxonica documentation, the `file:last-modified()` function is only available in the Saxon-PE and Saxon-EE distributions. DITA-OT comes bundled with Saxon HE which means that you cannot use the above XSLT extension point out-of-the-box in WebHelp Responsive. You need to add Saxon EE to the DITA-OT's classpath when using this Publishing Template.
 
 The XSLT extension:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -35,7 +35,7 @@ The XSLT extension:
 ```
 
 The Publishing Template also uses a custom CSS file (`last-modified-in-content.css`) to style the newly inserted content:
-```
+```css
 .last-modified {
     font-size:0.75em;
     font-weight:bold;
