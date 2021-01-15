@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Feedback Custom Fragments</name>
+    <description>Allows contributing custom HTML fragments before and after the Oxygen Feedback component.</description>
+    <webhelp>
+        <preview-image file="preview.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.gen.task.lbl" value="YES"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+            <parameter name="webhelp.show.child.links" value="yes"/>
+            <!-- BEFORE Feedback FRAGMENT param - expanded in 'xsl/feedback-custom-fragments.xsl'  -->
+            <parameter name="custom.webhelp.before.feedback.fragment" value="before-feedback-fragment.xml" type="filePath"/>
+            <!-- AFTER Feedback FRAGMENT param - expanded in 'xsl/feedback-custom-fragments.xsl'  -->
+            <parameter name="custom.webhelp.after.feedback.fragment" value="after-feedback-fragment.xml" type="filePath"/>
+        </parameters>
+        <xslt>
+            <extension file="xsl/feedback-custom-fragments.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="feedback-custom-fragments.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <tags>
+            <tag type="other">feedback</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
