@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Custom search engine</name>
+    <description>Publishing template that overrides the search engine and the search results area.</description>
+    <webhelp>
+        <preview-image file="blue-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="blue.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+            <fileset>
+                <include name="js/**"></include>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment file="custom-search-script-fragment.xml" placeholder="webhelp.fragment.custom.search.engine.script"/>
+            <fragment file="custom-search-results-fragment.xml" placeholder="webhelp.fragment.custom.search.engine.results"/>
+        </html-fragments>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/blue/</online-preview-url>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="color">blue</tag>
+            <tag type="color">light</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
