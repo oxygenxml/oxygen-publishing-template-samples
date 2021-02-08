@@ -1,6 +1,6 @@
 # Custom search engine 
 
-This is a sample publishing template that overrides WebHelp's search engine and the search results area.
+This is a sample publishing template that overrides WebHelp's search engine and search results area.
 
 To integrate a custom search engine into your WebHelp Responsive output, follow these steps:
 
