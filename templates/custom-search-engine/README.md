@@ -4,24 +4,24 @@ This is a sample publishing template that overrides WebHelp's search engine and 
 
 To integrate a custom search engine into your WebHelp Responsive output, follow these steps:
 
-1.  Create a publishing template by following the instructions in the [How to Create a Publishing Template](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html) topic.
+1. Create a publishing template by following the instructions in the [How to Create a Publishing Template](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html) topic.
 
-2.  In the folder where your publishing descriptor \(the .opt file\) is located create the following items:
+2. Create the following items in the folder that contains your publishing descriptor file \(the .opt file\):
 
-    1.  a file named custom-search-results-fragment.xml
-    2.  a file named custom-search-script-fragment.xml
-    3.  a folder named js
-3.  In the **custom-search-results-fragment.xml** file, define the HTML structure which will be used as the search results area, for example:
+    - A file named **custom-search-results-fragment.xml**.
+    - A file named **custom-search-script-fragment.xml**.
+    - A folder named **js**.
+3. In the **custom-search-results-fragment.xml** file, define the HTML structure that will be used as the search results area. For example:
 
     ```
-    <div id="cumstom-search-results"></div>
+    <div id="cumstom-search-results">...</div>
     ```
 
-    **Note:** The custom search engine script will have to find an HTML element from the HTML structure that will be used as the search results area and write the search results inside it. In our case is the div element with the id *custom-search-results*.
+    **Note:** The custom search engine script will need to find an HTML element from the HTML structure that will be used as the search results area and write the search results inside it. In this example, it is the <div> element with the id *custom-search-results*.
 
-4.  In the js folder create a file named **custom-search.js**.
+4. In the **js** folder, create a file named **custom-search.js**.
 
-5.  As a starting point, you may copy the following content in the **custom-search.js** file:
+5. As a starting point, you can copy the following content to the **custom-search.js** file:
 
     ```
     $(document).ready(function () {
@@ -32,15 +32,15 @@ To integrate a custom search engine into your WebHelp Responsive output, follow 
     });
     ```
 
-    **Important:** The value entered by the user in the search page will be available in the URL's query parameters in a parameter named searchQuery.
+    **Important:** The value entered by the user in the search page will be available in the URL's query parameters in a parameter named *searchQuery*.
 
-    **Attention:** *URLSearchParams*is not supported on all browsers \(it is used as an example\). A list with the supported browsers can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams#browser_compatibility). A different solution should be used if you need to support other browsers.
+    **Attention:** *URLSearchParams* is not supported on all browsers \(it is used as an example\). A list with the supported browsers can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams#browser_compatibility). A different solution should be used if you need to support other browsers.
 
-6.  Implement your custom search engine.
+6. Implement your custom search engine.
 
-    **Note:** The search results should be pushed into the div created earlier with the id *custom-search-results*.
+    **Note:** The search results should be pushed into the <div> element created earlier with the id *custom-search-results*.
 
-7.  In the **custom-search-script-fragment.xml** file, define the scripts which are required for your custom search engine to run, for example:
+7. In the **custom-search-script-fragment.xml** file, define the scripts that are required for your custom search engine to run. For example:
 
     ```
     <div>
@@ -48,7 +48,7 @@ To integrate a custom search engine into your WebHelp Responsive output, follow 
     </div>
     ```
 
-8.  Copy the js folder to the output folder during the transformation process. For this, open the .opt file and add the following content in the `resources` section \(see [Template Resources](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title3)for more details\):
+8. Copy the **js** folder to the output folder during the transformation process. For this, open the .opt file and add the following content in the `resources` section \(see [Template Resources](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title3)for more details\):
 
     ```
     <fileset>
@@ -56,7 +56,7 @@ To integrate a custom search engine into your WebHelp Responsive output, follow 
     </fileset>
     ```
 
-9.  Set the transformation parameters needed to enable the custom search engine. For this, open the .opt file and add the following content inside the `webhelp` element:
+9. Set the transformation parameters needed to enable the custom search engine. For this, open the .opt file and add the following content inside the `webhelp` element:
 
     ```
     <html-fragments>
