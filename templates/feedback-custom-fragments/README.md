@@ -1,4 +1,4 @@
-# Custom Content After Search Template
+# Custom Content Before and After Oxygen Feedback component
 
 This is a sample publishing template that contributes custom HTML content before and after the Oxygen Feedback component in each topic page.
 
