@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>change-viewport-meta</name>
+    <description>Publishing Template that changes the value of the 'viewport' meta using an XSLT extension file.</description>
+    <webhelp>
+        <preview-image file="blue-tree.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="no"/>
+            <parameter name="webhelp.show.main.page.toc" value="yes"/>
+            <parameter name="clean.output" value="yes"/>
+            <parameter name="clean.temp" value="no"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+        </parameters>
+        <resources>
+            <css file="blue.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <xslt>
+            <extension file="xsl/change-meta.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xsl/change-meta.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xsl/change-meta.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
+            <extension file="xsl/change-meta.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+        </xslt>
+        <tags>
+            <tag type="layout">viewport-meta</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
