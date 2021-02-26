@@ -73,7 +73,7 @@ To create a custom component that displays a link to the current topic's associa
     <comp:video-link xmlns:comp="http://example.com/custom-components"/>
     ```
 
-    As you can see, the component is an XML element belonging to a custom define namespace.
+    As you can see, the component is an XML element belonging to a custom defined namespace.
 
 2.  Next you have to insert the component in your topic pages. To do this you will have to save the associated XML element in an HTML Fragment file \(let's consider that the file is named video-link-fragment.xml\).
 3.  Next you have to reference the HTML Fragment file in you current Publishing Template's [descriptor file](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title2) and associate it with an HTML Fragment placeholder that is available for the topic pages \(`webhelp.fragment.before.topic.toolbar` in this case\):
@@ -86,7 +86,7 @@ To create a custom component that displays a link to the current topic's associa
 
     **Note:** The HTML Fragment file is referenced using a path relative to the Publishing Template's root directory.
 
-4.  Create a custom XSLT file that processes you component and picks up the video URL available in the current topic's metadata and generate a link to the page containing the video:
+4.  Create a custom XSLT file that processes the custom component and picks up the video URL available in the current topic's metadata and generates a link to the page containing the video:
 
     ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
@@ -124,7 +124,7 @@ To create a custom component that displays a link to the current topic's associa
     </div>
     ```
 
-5.  Reference the above XSL file in your Publishing Template's descriptor file using the XSLT extension point associated with the XSL module that generates the HTML file for each DITA topic:
+5.  Reference the above XSL file in your Publishing Template's descriptor file using the XSLT extension point associated with the XSL module that generates an HTML file for each DITA topic:
 
     ```xml
     <xslt>
@@ -172,13 +172,11 @@ To create a custom component that displays a link to the current topic's associa
 
     ```xml
     <resources>
-        <css file="ashes.css"/>
-        <css file="notes.css"/>
+        <!-- .... -->
         <css file="component/css/video-link.css"/>
     </resources>
     ```
 
 8.  The output will look like in the following image:
 
-    ![Output](output.png "Output")
-
+    ![Link to video tutorial](link-to-video.png "Link to video tutorial")
