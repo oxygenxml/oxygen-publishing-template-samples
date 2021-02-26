@@ -1,11 +1,9 @@
 # Change Viewport Meta
 
-This is a sample publishing template that changes the value of the 'viewport' meta using an XSLT extension file.
+This is a sample publishing template that uses an 
+[XSLT Extension](https://www.oxygenxml.com/doc/versions/22.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to customize the value of the `viewport <meta>`.
 
 ![Output Sample](change-meta.png)
-
-It uses an 
-[XSLT Extension](https://www.oxygenxml.com/doc/versions/22.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to customize the value of the `viewport <meta>`.
 
 The XSLT extension:
 ```
