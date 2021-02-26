@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.video-link-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 10;
+    justify-content: flex-end;
+}
+
+.video-link {
+    display: flex;
+    align-items: center;
+    color: #fff !important;
+}
+
+.video-link:before {
+    content: "smart_display";
+    font-family: 'Material Icons';
+    font-size: 20px;
+    display: inline-block;
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+.video-link span {
+    display: none;
+}
+
+.wh_right_tools {
+    padding: 0;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>video-link-custom-component</name>
+    <description>Publishing Template that demonstrates how to create a custom component.</description>
+    <webhelp>
+        <preview-image file="ashes-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+        </parameters>
+        <resources>
+            <css file="ashes.css"/>
+            <css file="notes.css"/>
+            <css file="component/css/video-link.css"/>
+        </resources>
+        <html-fragments>
+            <fragment file="component/html-fragment/video-link-fragment.xml" placeholder="webhelp.fragment.before.topic.toolbar"/>
+        </html-fragments>
+        <xslt>
+            <extension file="component/xsl/video-link-impl.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <tags>
+            <tag type="layout">video-link</tag>
+            <tag type="color">custom-component</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
