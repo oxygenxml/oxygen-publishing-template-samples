@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>process-meta-in-topic</name>
+    <description>Publishing Template that processes custom metadata in each topic.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <xslt>
+            <extension id="com.oxygenxml.webhelp.xsl.dita2webhelp" file="xsl/refresh-meta.xsl"/>
+        </xslt>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="NUMBER"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/oxygen/</online-preview-url>
+        <tags>
+            <tag type="other">othermeta</tag>
+            <tag type="other">meta</tag>
+            <tag type="other">refresh</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
