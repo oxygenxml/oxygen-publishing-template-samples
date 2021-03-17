@@ -5,7 +5,7 @@
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <xslt>
-            <extension id="com.oxygenxml.webhelp.xsl.dita2webhelp" file="xsl/refresh-meta.xsl"/>
+            <extension id="com.oxygenxml.webhelp.xsl.dita2webhelp" file="xsl/process-meta.xsl"/>
         </xslt>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
