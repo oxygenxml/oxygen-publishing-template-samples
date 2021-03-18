@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>image-map-xref-target-blank</name>
+    <description>Sample Publishing Template that adds a target='_blank' attribute on all image map links.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <xslt>
+            <extension id="com.oxygenxml.webhelp.xsl.dita2webhelp" file="xsl/image-map-xref.xsl"/>
+        </xslt>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+            <parameter name="force-unique" value="true"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <tags>
+            <tag type="other">image-map</tag>
+            <tag type="other">xref</tag>
+            <tag type="other">@target=_blank</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
