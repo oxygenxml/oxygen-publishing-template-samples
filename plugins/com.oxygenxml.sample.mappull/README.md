@@ -33,11 +33,11 @@ Given a list of preconfigured attributes names, for each `topicref` in the input
 ```
 
 ## Use case:
-Can be used to copy profiling attributes from the target topic on each `topicref` from the DITA map. 
+Can be used to copy profiling attributes from the target topic on the associated `topicref` from the DITA map. 
 
 ## How to install:
 
 1. Copy the plugin's directory (*com.oxygenxml.sample.mappull*) into your current DITA-OT instance (*\[DITA-OT-DIR]/plugins/*)
 1. Install  (integrate) the plugin: [https://www.dita-ot.org/3.6/topics/plugins-installing.html](https://www.dita-ot.org/3.6/topics/plugins-installing.html)
-1. You can configure wich attributes to pull from the target topic, by edditing the value of the `$attributes` variable from *xsl/sample-mappull.xsl*
+1. You can configure wich attributes to pull from the target topic by edditing the value of the `$attributes` variable from *xsl/sample-mappull.xsl*
 
