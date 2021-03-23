@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Oxygen WebHelp Plugin Common Extensions for DITA-OT 2.0 or newer.
+
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+-->
+<!DOCTYPE plugin[
+ <!ENTITY commons SYSTEM 'plugin_commons.xml'>
+]>
+<plugin id="com.oxygenxml.webhelp.sample.mappull">
+  <feature extension="dita.xsl.mappull" file="xsl/sample-mappull.xsl"/>
+</plugin>
