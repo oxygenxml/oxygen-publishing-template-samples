@@ -1,0 +1,1 @@
+<meta name="description" content="${map-xpath(/map/topicmeta/shortdesc)}"/>
