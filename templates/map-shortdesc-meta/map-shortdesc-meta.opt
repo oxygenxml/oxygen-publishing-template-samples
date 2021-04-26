@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>map-shortdesc-meta</name>
-    <description>Publishing template that copies the map's short description into a dedicated meta element.</description>
+    <description>Publishing template that generates a description meta in the WebHelp's main page based on the DITA map's short description.</description>
     <webhelp>
         <preview-image file="blue-tiles.png"/>
         <parameters>
