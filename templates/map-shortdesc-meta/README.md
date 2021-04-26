@@ -1,6 +1,6 @@
 # Main page description meta
 
-This is a sample publishing template that generates a "description" meta in the WebHelp's main page from the DITA Map's 'shordesc'.
+This is a sample publishing template that generates a "description" meta in the WebHelp's main page from the DITA Map's 'shortdesc'.
 
 
 - &lt;shortdesc> in DITA Map: 
