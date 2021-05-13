@@ -10,7 +10,7 @@ It uses an
 The XSLT extension removes the *Search Input* component from the default location and inserts it after the *Menu* component in the page header. 
 
 The XSLT extension:
-```
+```xml
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:whc="http://www.oxygenxml.com/webhelp/components"
@@ -69,7 +69,7 @@ The XSLT extension:
 ```
 
 The Publishing Template also uses a custom CSS file (`search-in-header.css`) to adjust the layout the *Search Input* component and make it fit into the header section:
-```
+```css
 .wh_header_flex_container .wh_search_input {
   padding: 0;
   background: none;
