@@ -1,5 +1,5 @@
 # Oxygen Publishing Template Samples
-Project containing various examples of Oxygen Publishing Templates.
+Project containing various examples of Oxygen Publishing Templates. 
 
 This is a demo project that introduces the concept of the Oxygen Webhelp [Publishing Template](https://www.oxygenxml.com/doc/ug-editor/topics/whr-publishing-template.html) that defines all aspects of the layout and
 style of WebHelp Responsive output. 
