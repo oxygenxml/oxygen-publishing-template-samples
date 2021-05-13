@@ -1,0 +1,37 @@
+.search_and_header_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.search_and_header_container .wh_search_input {
+    padding: 0;
+    background: none;
+}
+
+@media only screen and (max-width : 767px) {
+    .search_and_header_container .wh_search_input {
+        width: 100%;
+    }
+}
+
+#searchForm > div {
+    width: 100%;
+}
+
+.wh_top_menu_and_indexterms_link {
+    flex-grow: .9;
+}
+
+.wh_search_textfield {
+    height: 2em;
+}
+
+.wh_search_button {
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}

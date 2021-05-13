@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>search-before-header</name>
+    <description>This is a sample publishing template that moves the *Search Input* component from 
+        its default location before the header section of each output page.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="TITLE"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="search-before-header.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <xslt>
+            <extension file="xsl/move-search-before-header.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xsl/move-search-before-header.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+            <extension file="xsl/move-search-before-header.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xsl/move-search-before-header.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
+        </xslt>
+        <tags>
+            <tag type="other">search</tag>
+            <tag type="other">search-before-header</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
