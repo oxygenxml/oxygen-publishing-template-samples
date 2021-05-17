@@ -5,7 +5,7 @@ This is a sample publishing template that moves the *Search Input* component fro
 ![Output Sample](search-before-header.png)
 
 It uses an 
-[XSLT Extension](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to move the *Search Input* component before the header serction.
+[XSLT Extension](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to move the *Search Input* component before the header section.
 
 The XSLT extension removes the *Search Input* component from the default location and inserts it before the row containig the *Publication Title* and the *Menu* components. 
 
