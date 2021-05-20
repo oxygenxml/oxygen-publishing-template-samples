@@ -1,4 +1,4 @@
-# Search Input in Page Header
+# Search Input Before Page Header
 
 This is a sample publishing template that moves the *Search Input* component from its default location before the header section of each output page.
 
