@@ -4,10 +4,8 @@ This is a sample Publishing Template that uses a custom CSS to layout the links 
 
 ## Input sample: 
 
-- Single map sample[../../dita/topics-with-tiles/single-map/](../../dita/topics-with-tiles/single-map/)
-- Multi-map smaple[../../dita/topics-with-tiles/multi-map/](../../dita/topics-with-tiles/multi-map/)
-
-[main-publication.ditamap](../../dita/topics-with-tiles-sample/main-publication.ditamap)
+- [Single map sample](../../dita/topics-with-tiles/single-map/)
+- [Multi-map smaple](../../dita/topics-with-tiles/multi-map/)
 
 ## Output sample:
 ![Output Sample](topic-with-tiles.png)
