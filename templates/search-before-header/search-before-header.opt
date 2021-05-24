@@ -16,6 +16,7 @@
             <css file="oxygen.css"/>
             <css file="notes.css"/>
             <css file="search-before-header.css"/>
+            <css file="footer-fix.css"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
