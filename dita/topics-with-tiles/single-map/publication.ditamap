@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Publication</title>
+    <topicref href="topics/main-topic-1.dita">
+        <topicref href="topics/topic-1.1.dita"/>
+        <topicref href="topics/topic-1.2.dita"/>
+        <topicref href="topics/topic-1.3.dita"/>
+        <topicref href="topics/topic-1.4.dita"/>
+        <topicref href="topics/topic-1.5.dita"/>
+    </topicref>
+    <topicref href="topics/main-topic-2.dita">
+        <topicref href="topics/topic-2.1.dita"/>
+        <topicref href="topics/topic-2.2.dita"/>
+        <topicref href="topics/topic-2.3.dita"/>
+        <topicref href="topics/topic-2.4.dita"/>
+        <topicref href="topics/topic-2.5.dita"/>
+    </topicref>
+</map>
