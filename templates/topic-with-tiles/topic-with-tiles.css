@@ -20,9 +20,7 @@
     width: 30%;
     min-width: 300px;
     min-height: 140px;
-    border: 1px solid #939393;
-    
-    color: #494949;
+    background-color: #ECF2F9;
     font-weight: 400;
     font-size: 1em;
     margin-top: 0.5em;
@@ -51,10 +49,17 @@
 .wh_child_links .link a {
     display: block;
     width: 100%;
+    font-weight: 300;
     text-decoration: none;
     text-transform: none;
-    text-align: left;
-    color: #2372de !important;
-    font-size: 1.3em;
-    font-weight: bold;                
+    text-align: center;
+    color: #3077be !important;
+    font-size: 1.7em;
+}
+
+.wh_child_links .link .desc {
+    margin-top: 1em;
+    text-align: center;
+    color: #0D1A2B;
+    font-size: 1.1em;
 }

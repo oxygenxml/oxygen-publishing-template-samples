@@ -4,6 +4,6 @@
     <title>Topic 1.1</title>
     <shortdesc>Short description for Topic 1.1.</shortdesc>
     <body>
-        <p>Topic 1.1 content</p>
+        <p>Topic 1.1 content<indexterm>content</indexterm></p>
     </body>
 </topic>

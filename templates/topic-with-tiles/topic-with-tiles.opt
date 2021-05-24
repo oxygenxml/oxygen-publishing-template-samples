@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
-    <name>Topic with Tiles</name>
+    <name>topic-with-tiles</name>
     <description>Publishing template that customizes the child links section of a topic. The child links are displayed as tiles.</description>
     <webhelp>
-        <preview-image file="blue-tiles.png"/>
+        <preview-image file="oxygen-tiles.png"/>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
@@ -15,19 +15,19 @@
             <parameter name="webhelp.show.child.links" value="yes"/>
         </parameters>
         <resources>
-            <css file="blue.css"/>
-            <css file="topic-tiles.css"/>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="footer-fix.css"/>
+            <css file="topic-with-tiles.css"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
                 <exclude name="resources/**/*.git"/>
             </fileset>
         </resources>
-        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/blue/</online-preview-url>
         <tags>
             <tag type="layout">tiles</tag>
-            <tag type="color">blue</tag>
-            <tag type="color">light</tag>
+            <tag type="other">topic-with-tiles</tag>
         </tags>
     </webhelp>
 </publishing-template>
