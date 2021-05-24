@@ -2,9 +2,11 @@
 
 This is a sample Publishing Template that uses a custom CSS to layout the links to child topics from each topic as tiles similar with the ones from the main page.
 
+## Input sample: 
+[main-publication.ditamap](../../dita/topics-with-tiles-sample/main-publication.ditamap)
+
 ## Output sample:
 ![Output Sample](topic-with-tiles.png)
-
 
 
 ## The custom CSS: 
