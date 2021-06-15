@@ -10,8 +10,6 @@ This is a sample Publishing Template that Uses custom CSS styles to place the Lo
 ```css
 .wh_header_flex_container {
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
 }
 .wh_header_flex_container > * {
     width: 100%;
