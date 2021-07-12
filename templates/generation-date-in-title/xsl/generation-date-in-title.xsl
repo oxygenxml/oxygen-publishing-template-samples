@@ -10,10 +10,10 @@
         mode="text-only">
         <!-- Apply the default processing -->
         <xsl:next-match/> -
-        <xsl:call-template name="formatted-date-time"/>
+        <xsl:call-template name="formatted-date"/>
     </xsl:template>
     
-    <xsl:template name="formatted-date-time">
+    <xsl:template name="formatted-date">
         <xsl:value-of select="format-date(current-date(), '[M01]/[D01]/[Y01]')"/>
     </xsl:template>
 </xsl:stylesheet>
