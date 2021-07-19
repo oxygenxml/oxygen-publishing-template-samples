@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>tiles-groups</name>
+    <description>Displays the tiles on the main page grouped in sections. The gropus are determined by the topics on the filrst level in the DITA Map and the tiles are determined from the topics on the second level.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.top.menu.depth" value="3"/>
+            <parameter name="args.figurelink.style" value="TITLE"/>
+            <parameter name="args.tablelink.style" value="NUMBER"/>
+            <parameter name="clean.output" value="yes"/>
+            <parameter name="clean.temp" value="no"/>
+            <parameter name="webhelp.publication.toc.links" value="all"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="customization/css/tiles-groups.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+            <fileset>
+                <include name="customization/css/**/*"/>
+                <exclude name="customization/css/**/*.svn"/>
+                <exclude name="customization/css/**/*.git"/>
+            </fileset>
+            
+        </resources>
+        <xslt>
+            <extension file="customization/xsl/tile-groups.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+        </xslt>
+        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/oxygen/</online-preview-url>
+        <tags>
+            <tag type="other">tiles-groups</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

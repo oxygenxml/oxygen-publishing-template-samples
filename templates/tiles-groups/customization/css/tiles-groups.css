@@ -1,0 +1,26 @@
+.tiles-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5em 0;
+}
+.tiles-group-content {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tiles-group-title {
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.tiles-group-shortdesc {
+    color: #0D1A2B;
+    font-size: 1.1em;
+}
