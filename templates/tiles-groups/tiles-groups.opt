@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>tiles-groups</name>
-    <description>Displays the tiles on the main page grouped in sections. The gropus are determined by the topics on the filrst level in the DITA Map and the tiles are determined from the topics on the second level.</description>
+    <description>Displays the tiles on the main page grouped in sections. The groups are determined by the topics on the filrst level in the DITA Map and the tiles are determined from the topics on the second level.</description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <parameters>
