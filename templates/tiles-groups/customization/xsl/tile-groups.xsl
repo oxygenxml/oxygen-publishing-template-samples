@@ -9,21 +9,9 @@
     <xsl:template match="/toc:toc/toc:topic[oxygen:isTileVisible(.)]" mode="create-tiles">
         <xsl:param name="tileTemplate"/>
         <div class="tiles-group">
-            <div class="tiles-group-header">
-                <!-- Generate the default tile content in a variable for further processing. -->
-                <xsl:variable name="defaultTile">
-                    <xsl:next-match>
-                        <xsl:with-param name="tileTemplate" select="$tileTemplate"/>
-                    </xsl:next-match>
-                </xsl:variable>
-                <!-- Copy the id of the associated dita topic -->
-                <xsl:copy-of select="$defaultTile//@data-id"/>
-                <!-- Copy the title of the associated dita topic -->
-                <xsl:apply-templates select="$defaultTile//*[contains(@class, 'wh_tile_title')]" mode="copy-header"/>
-                <!-- Copy the shortdesc of the associated dita topic -->
-                <xsl:apply-templates select="$defaultTile//*[contains(@class, 'wh_tile_shortdesc')]" mode="copy-header"/>
-                
-            </div>
+            <xsl:call-template name="generateGroupHeader">
+                <xsl:with-param name="tileTemplate" select="$tileTemplate"/>
+            </xsl:call-template>
             <xsl:if test="count(toc:topic[oxygen:isTileVisible(.)]) > 0">
                 <div class="tiles-group-content">
                     <xsl:apply-templates select="toc:topic[oxygen:isTileVisible(.)]" mode="#current">
@@ -31,6 +19,28 @@
                     </xsl:apply-templates>
                 </div>
             </xsl:if>
+        </div>
+    </xsl:template>
+    
+    <xsl:template name="generateGroupHeader">
+        <xsl:param name="tileTemplate"/>
+        <div class="tiles-group-header">
+            <!-- Generate the default tile content in a variable for further processing. -->
+            <xsl:variable name="defaultTile">
+                <xsl:next-match>
+                    <xsl:with-param name="tileTemplate" select="$tileTemplate"/>
+                </xsl:next-match>
+            </xsl:variable>
+            <!-- Copy the id of the associated dita topic -->
+            <xsl:copy-of select="$defaultTile//@data-id"/>
+
+            <!-- Copy the title of the associated dita topic -->
+            <xsl:apply-templates select="$defaultTile//*[contains(@class, 'wh_tile_title')]"
+                mode="copy-header"/>
+            <!-- Copy the shortdesc of the associated dita topic -->
+            <xsl:apply-templates select="$defaultTile//*[contains(@class, 'wh_tile_shortdesc')]"
+                mode="copy-header"/>
+
         </div>
     </xsl:template>
     

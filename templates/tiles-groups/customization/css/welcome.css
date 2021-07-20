@@ -1,0 +1,14 @@
+.welcome {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome-logo {
+    height: auto;
+    max-width: 96px;
+}
+.welcome-text {
+    padding: 5px;
+}

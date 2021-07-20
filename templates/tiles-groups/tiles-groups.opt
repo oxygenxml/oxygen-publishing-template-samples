@@ -18,6 +18,9 @@
             <css file="oxygen.css"/>
             <css file="notes.css"/>
             <css file="customization/css/tiles-groups.css"/>
+            <css file="customization/css/video.css"/>
+            <css file="customization/css/welcome.css"/>
+            <logo file="customization/resources/img/logo/flower_logo.png"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
@@ -28,8 +31,17 @@
                 <exclude name="customization/css/**/*.svn"/>
                 <exclude name="customization/css/**/*.git"/>
             </fileset>
-            
+            <fileset>
+                <include name="customization/resources/**/*"/>
+                <exclude name="customization/resources/**/*.svn"/>
+                <exclude name="customization/resources/**/*.git"/>
+            </fileset>
         </resources>
+        <html-fragments>
+            <fragment file="customization/html-fragments/main-page-resources.xml" 
+                placeholder="webhelp.fragment.before.main.content.area.main.page"/>
+            <fragment file="customization/html-fragments/welcome.xml" placeholder="webhelp.fragment.welcome"/>
+        </html-fragments>
         <xslt>
             <extension file="customization/xsl/tile-groups.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
         </xslt>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="videos-container">
+    <div class="videos-header">Video tutorials</div>
+    <div class="videos-content">
+        <div class="video">
+            <a href="https://oxygenxml.com/demo/wn23.html" class="video-link" id="whats-new" target="_blank">
+                <div class="video-preview">
+                    <img src="${oxygen-webhelp-template-dir}/customization/resources/img/preview/bb_wn23.png" alt="Video"/>
+                </div>
+                <div class="video-title">What is New in Oxygen XML Editor 23</div>
+            </a>
+        </div>
+        <div class="video">
+            <a href="https://oxygenxml.com/demo/json_author.html" class="video-link" id="json_author" target="_blank">
+                <div class="video-preview">
+                    <img src="${oxygen-webhelp-template-dir}/customization/resources/img/preview/bb_json_author.png" alt="Video"/>
+                </div>
+                <div class="video-title">JSON Author Mode</div>
+            </a>
+        </div>
+        <div class="video">
+            <a href="https://oxygenxml.com/demo/diff_eclipse.html" class="video-link" id="diff_eclipse" target="_blank">
+                <div class="video-preview">
+                    <img src="${oxygen-webhelp-template-dir}/customization/resources/img/preview/bb_diff_eclipse.png" alt="Video"/>
+                </div>
+                <div class="video-title">Oxygen Diff and Merge Support in Eclipse</div>
+            </a>
+        </div>
+    </div>
+</div>

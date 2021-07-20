@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="welcome">
+    <img class="welcome-logo" src="${oxygen-webhelp-template-dir}/customization/resources/img/logo/welcome_logo.png"/>
+    <div class="welcome-text">Enjoy Your Flower Garden</div>
+</div>
