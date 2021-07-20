@@ -39,4 +39,8 @@
         padding-left: 1em;
         min-width: 150px;
     }
+    
+    .wh_publication_title {
+        min-width: 150px;
+    }
 }
