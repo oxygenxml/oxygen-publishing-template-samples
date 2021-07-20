@@ -22,3 +22,21 @@
     align-items: center;
     padding: 0;
 }
+
+@media only screen and (min-width : 768px) {
+    .wh_top_menu_and_indexterms_link.navbar-collapse {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .wh_header_flex_container {
+        flex-wrap: nowrap;
+    }
+
+    .wh_header_flex_container .wh_search_input {
+        padding-left: 1em;
+        min-width: 150px;
+    }
+}
