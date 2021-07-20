@@ -8,6 +8,8 @@
 .welcome-logo {
     height: auto;
     max-width: 96px;
+    background-color: #fff;
+    border-radius: 50%;
 }
 .welcome-text {
     padding: 5px;

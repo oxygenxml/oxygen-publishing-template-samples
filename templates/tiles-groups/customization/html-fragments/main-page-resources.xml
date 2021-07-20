@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="videos-container">
-    <div class="videos-header">Video tutorials</div>
+    <div class="videos-header">Video Tutorials</div>
     <div class="videos-content">
         <div class="video">
             <a href="https://oxygenxml.com/demo/wn23.html" class="video-link" id="whats-new" target="_blank">
