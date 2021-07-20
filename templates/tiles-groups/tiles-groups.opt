@@ -20,7 +20,7 @@
             <css file="customization/css/tiles-groups.css"/>
             <css file="customization/css/video.css"/>
             <css file="customization/css/welcome.css"/>
-            <logo file="customization/resources/img/logo/flower_logo.png"/>
+            <logo file="customization/resources/img/logo/publication_logo.png"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
