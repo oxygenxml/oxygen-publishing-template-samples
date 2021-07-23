@@ -1,7 +1,7 @@
 # Tiles Groups
 
 Displays the tiles on the main page grouped in sections.
-The groups are determined by the topics on the filst level in the DITA Map and the tiles are determined from the topics on the second level.This is a sample publishing template that moves the *Search Input* component from its default location to the header section of each output page.
+The groups are determined by the topics on the filst level in the DITA Map and the tiles are determined from the topics on the second level.
 
 ![Tiles Groups Output Sample](output-preview/tiles.png)
 
@@ -9,7 +9,7 @@ It uses an
 [XSLT Extension](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) File to change the structure generated for the Tiles component.
 
 The XSLT extension overrides the default processing for the Tiles component that would have generated a tile for each top-level topic.
-Instead of this it generates group of tiles for each top level topic with the topic title acting as header for the tiles group.
+Instead of this it generates a group of tiles for each top level topic with the topic title acting as header for the tiles group.
 The tiles in each group are generated from the second level topics.
 
 The XSLT extension:
@@ -87,7 +87,7 @@ The XSLT extension:
 </xsl:stylesheet>
 ```
 
-The Publishing Template also uses a [custom CSS](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/webhelp-customizing-with-css.html) file for styling the generated HTML structure (`customization/css/tiles-groups.css`) to adjust the layout the *Search Input* component and make it fit into the header section:
+The Publishing Template also uses a [custom CSS](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/webhelp-customizing-with-css.html) file for styling the generated HTML structure (`customization/css/tiles-groups.css`):
 ```css
 .tiles-group {
     display: flex;
@@ -127,8 +127,8 @@ The Publishing Template also uses a [custom CSS](https://www.oxygenxml.com/doc/v
 In addition to the XSLT extension that generates the tiles groups, this template also contributes two HTML fragments to the Main Page:
  - one for inserting a list of links to Video Tutorials above the tiles component
  - one for inserting an additional Logo and Title Message (welcome fragment) above the serch input 
-You can find more details about inserting HTML content in output [in this topic](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/wh-add-custom-html.html).
 
+You can find more details about inserting HTML content in output [in this topic](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/wh-add-custom-html.html).
 Each HTML Fragment is acompanied by an additional CSS that contributes the styles for the inserted content.
 
 ### Video Tutorials
@@ -178,7 +178,7 @@ The HTML Fragment file (`customization/html-fragments/main-page-resources.xml`) 
 **NOTE**: The above HTML Fragment file references several images used as preview images for the linked videos: 
  - They are located in the `customization/resources/img/preview/` directory. 
  - They are referenced in the HTML Fragment using relative paths prefixed with the `${oxygen-webhelp-template-dir}` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/wh-add-custom-html.html#wh-add-custom-html__using_webhelp_macros_inside_a_html_fragment_file) in order to corectly expand their path in the output HTML page.
- - In order for the above images to be copied in the WebHelp Responsive output directory the followinf fileset is declared in the `<resources>` section of the Publishing Template's descripto file (`tiles-groups.opt`):
+ - In order for the above images to be copied in the WebHelp Responsive output directory the following fileset is declared in the `<resources>` section of the Publishing Template's descriptor file (`tiles-groups.opt`):
     ```xml
     <fileset>
         <include name="customization/resources/**/*"/>
