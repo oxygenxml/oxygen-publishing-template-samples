@@ -272,6 +272,8 @@ The styles used for the above HTML frgament can be found in `customization/css/w
 
 ### Publication Logo
 
+![Logo Output Sample](output-preview/logo.png)
+
 The publication logo image (`customization/resources/img/logo/publication_logo.png`) is referenced in the `<resources>` section of the Publishing Template's descriptor file (`tiles-group.opt`) as:
 
 ```xml
