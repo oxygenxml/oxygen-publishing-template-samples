@@ -12,7 +12,7 @@
             <parameter name="args.tablelink.style" value="NUMBER"/>
             <parameter name="clean.output" value="yes"/>
             <parameter name="clean.temp" value="no"/>
-            <parameter name="webhelp.publication.toc.links" value="all"/>
+            <parameter name="webhelp.publication.toc.links" value="chapter"/>
         </parameters>
         <resources>
             <css file="oxygen.css"/>
