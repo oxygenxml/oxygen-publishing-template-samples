@@ -35,3 +35,7 @@
     align-items: center;
     padding: 0;
 }
+
+.ui-autocomplete {
+  z-index: 10000;
+}

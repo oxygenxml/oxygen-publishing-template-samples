@@ -44,3 +44,7 @@
         min-width: 150px;
     }
 }
+
+.ui-autocomplete {
+  z-index: 10000;
+}
