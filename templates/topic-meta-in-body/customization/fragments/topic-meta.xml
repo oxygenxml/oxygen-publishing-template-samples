@@ -1,0 +1,1 @@
+<div class="audience ${topic-xpath(/topic/prolog/metadata/audience[1]/@audience)}"/>

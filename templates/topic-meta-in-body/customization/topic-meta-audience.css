@@ -1,0 +1,6 @@
+.audience.administrator ~ #wh_topic_container .topictitle1::after{
+display: block;
+  content: "Audience: Administrators only";
+  font-size: .4em;
+  font-style: italic;
+}
