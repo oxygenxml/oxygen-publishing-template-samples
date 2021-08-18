@@ -10,6 +10,7 @@ This is a sample Publishing Template that extratcs a given topic meta (e.g.: `au
 
 ## The HTML Fragment
 The template inserts a custom [HTML fragment](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/wh-add-custom-html.html) at the begining of the HTML `body` element. The HTML fragment uses the `topic-xpath` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title7) in order to query the current topic for a certain `metadata`. In this case it looks for the `audience` metadata.
+
 The [HTML Fragment file](customization/fragments/topic-meta.xml):
 ```xml
 <div class="audience ${topic-xpath(/topic/prolog/metadata/audience[1]/@audience)}"/>
