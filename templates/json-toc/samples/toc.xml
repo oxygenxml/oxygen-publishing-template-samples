@@ -4,7 +4,7 @@
   <title>
     <span xmlns="http://www.w3.org/1999/xhtml" class="title">Growing Flowers</span>
   </title>
-  <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+  <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
     xtrc="topicref:1;5:45" href="topics/introduction.html" data-id="introduction"
     wh-toc-id="introduction-d249e11">
     <title>Introduction</title>
@@ -25,7 +25,7 @@
       </data>
     </topicmeta>
   </topic>
-  <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+  <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
     xtrc="topicref:2;12:37" href="topics/care.html" data-id="care" wh-toc-id="care-d249e27">
     <title>Care and Preparation</title>
     <shortdesc>
@@ -44,7 +44,7 @@
         <data class="- topic/data " name="hide" value="yes"/>
       </data>
     </topicmeta>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:3;18:42" href="tasks/pruning.html" data-id="prunning"
       wh-toc-id="prunning-d249e42">
       <title>Pruning</title>
@@ -55,7 +55,7 @@
         <linktext class="- map/linktext ">Pruning</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:4;19:52" href="tasks/gardenPreparation.html" data-id="gardenPreparation"
       wh-toc-id="gardenPreparation-d249e50">
       <title>Garden Preparation</title>
@@ -67,7 +67,7 @@
       </topicmeta>
     </topic>
   </topic>
-  <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+  <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
     xtrc="topicref:5;21:84" href="topics/index.html#index" collection-type="sequence"
     chunk="to-content" data-id="index" wh-toc-id="index-d249e59">
     <title>Flowers by Season</title>
@@ -84,7 +84,7 @@
       <shortdesc class="- map/shortdesc ">Flowers and seasons are intimately bound to each other.
         Most of the flowers are season-specific.</shortdesc>
     </topicmeta>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:6;22:77" href="topics/index.html#springFlowers" collection-type="sequence"
       data-id="springFlowers" wh-toc-id="springFlowers-d249e70">
       <title>Spring Flowers</title>
@@ -94,7 +94,7 @@
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Spring Flowers</linktext>
       </topicmeta>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:7;23:50" href="topics/index.html#iris" data-id="iris"
         wh-toc-id="iris-d249e78">
         <title>Iris</title>
@@ -105,7 +105,7 @@
           <linktext class="- map/linktext ">Iris</linktext>
         </topicmeta>
       </topic>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:8;24:54" href="topics/index.html#snowdrop" data-id="snowdrop"
         wh-toc-id="snowdrop-d249e86">
         <title>Snowdrop</title>
@@ -117,7 +117,7 @@
         </topicmeta>
       </topic>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:9;26:77" href="topics/index.html#summerFlowers" collection-type="sequence"
       data-id="summerFlowers" wh-toc-id="summerFlowers-d249e94">
       <title>Summer Flowers</title>
@@ -127,7 +127,7 @@
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Summer Flowers</linktext>
       </topicmeta>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:10;27:54" href="topics/index.html#gardenia" data-id="gardenia"
         wh-toc-id="gardenia-d249e102">
         <title>Gardenia</title>
@@ -138,7 +138,7 @@
           <linktext class="- map/linktext ">Gardenia</linktext>
         </topicmeta>
       </topic>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:11;28:51" href="topics/index.html#lilac" data-id="lilac"
         wh-toc-id="lilac-d249e110">
         <title>Lilac</title>
@@ -150,7 +150,7 @@
         </topicmeta>
       </topic>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:12;30:77" href="topics/index.html#autumnFlowers" collection-type="sequence"
       data-id="autumnFlowers" wh-toc-id="autumnFlowers-d249e118">
       <title>Autumn Flowers</title>
@@ -160,7 +160,7 @@
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Autumn Flowers</linktext>
       </topicmeta>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:13;31:59" href="topics/index.html#chrysanthemum" data-id="chrysanthemum"
         wh-toc-id="chrysanthemum-d249e126">
         <title>Chrysanthemum</title>
@@ -171,7 +171,7 @@
           <linktext class="- map/linktext ">Chrysanthemum</linktext>
         </topicmeta>
       </topic>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:14;32:52" href="topics/index.html#salvia" data-id="salvia"
         wh-toc-id="salvia-d249e134">
         <title>Salvia</title>
@@ -183,7 +183,7 @@
         </topicmeta>
       </topic>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:15;34:77" href="topics/index.html#winterFlowers" collection-type="sequence"
       data-id="winterFlowers" wh-toc-id="winterFlowers-d249e142">
       <title>Winter Flowers</title>
@@ -193,7 +193,7 @@
         <?ditaot gentext?>
         <linktext class="- map/linktext ">Winter Flowers</linktext>
       </topicmeta>
-      <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+      <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
         xtrc="topicref:16;35:53" href="topics/index.html#gerbera" data-id="gerbera"
         wh-toc-id="gerbera-d249e150">
         <title>Gerbera</title>
@@ -206,7 +206,7 @@
       </topic>
     </topic>
   </topic>
-  <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+  <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
     xtrc="topichead:1;39:48" href="javascript:void(0)" data-id="glossary"
     wh-toc-id="glossary-d249e162">
     <title>Glossary</title>
@@ -218,7 +218,7 @@
       <shortdesc class="- map/shortdesc ">Definitions of the most commonly used gardening
         terms.</shortdesc>
     </topicmeta>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:17;43:93" href="concepts/glossaryGenus.html" data-id="flowers.genus"
       wh-toc-id="flowers.genus-d249e167">
       <title>Genus</title>
@@ -229,7 +229,7 @@
         <linktext class="- map/linktext ">Genus</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:18;45:20" href="concepts/glossaryPollination.html"
       data-id="flowers.pollination" wh-toc-id="flowers.pollination-d249e175">
       <title>Pollination</title>
@@ -240,7 +240,7 @@
         <linktext class="- map/linktext ">Pollination</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:19;46:93" href="concepts/glossarySepal.html" data-id="flowers.sepal"
       wh-toc-id="flowers.sepal-d249e183">
       <title>Sepal</title>
@@ -251,7 +251,7 @@
         <linktext class="- map/linktext ">Sepal</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:20;47:99" href="concepts/glossaryRhizome.html" data-id="flowers.rhizome"
       wh-toc-id="flowers.rhizome-d249e191">
       <title>Rhizome</title>
@@ -262,7 +262,7 @@
         <linktext class="- map/linktext ">Rhizome</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:21;48:90" href="concepts/glossaryBulb.html" data-id="flowers.bulb"
       wh-toc-id="flowers.bulb-d249e199">
       <title>Bulb</title>
@@ -273,7 +273,7 @@
         <linktext class="- map/linktext ">Bulb</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:22;49:102" href="concepts/glossaryCultivar.html" data-id="flowers.cultivar"
       wh-toc-id="flowers.cultivar-d249e207">
       <title>Cultivar</title>
@@ -284,7 +284,7 @@
         <linktext class="- map/linktext ">Cultivar</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:23;51:20" href="concepts/glossaryPerennial.html" data-id="flowers.perennial"
       wh-toc-id="flowers.perennial-d249e215">
       <title>Perennial</title>
@@ -295,7 +295,7 @@
         <linktext class="- map/linktext ">Perennial</linktext>
       </topicmeta>
     </topic>
-    <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+    <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
       xtrc="topicref:24;52:99" href="concepts/glossaryPanicle.html" data-id="flowers.panicle"
       wh-toc-id="flowers.panicle-d249e223">
       <title>Panicle</title>
@@ -307,7 +307,7 @@
       </topicmeta>
     </topic>
   </topic>
-  <topic xtrf="file:/D:/projects/svn/eXml/samples/dita/flowers/flowers.ditamap"
+  <topic xtrf="file:/D:/samples/dita/flowers/flowers.ditamap"
     xtrc="topicref:25;54:42" href="topics/copyright.html" data-id="copyright"
     wh-toc-id="copyright-d249e232">
     <title>Copyright</title>
