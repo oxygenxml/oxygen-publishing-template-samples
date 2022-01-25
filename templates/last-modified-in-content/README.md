@@ -51,7 +51,8 @@ The Publishing Template also uses a custom CSS file (`last-modified-in-content.c
 If you are generating WebHelp Responsive output using a **transformation scenario from Oxygen XML Editor or Author** you can configure the transformation to use the Saxon EE library that is bundled in Oxygen:
 1. In the DITA Map Manager View click the Configure Transformation Scenario(s) icon on the view's toolbar.
 1. Edit your copy of DITA Map WebHelp Responsive transformation scenario.
-1. Got to Advanced tab
+1. Go to Advanced tab
+1. **[Oxygen 24.0+]**: Uncheck *Prefer using the "dita" command*
 1. Click on Libraries button
 1. Uncheck Allow Oxygen to add high priority libraries to the classpath
 1. Scroll down the list
@@ -60,6 +61,10 @@ If you are generating WebHelp Responsive output using a **transformation scenari
 1. Save the transformation scenario
 
 ![Use Oxygen's bundled Saxon EE](media/whr-use-oxygen-saxon.gif)
+
+#### Oxygen 24.0 update:
+In the *Advanced* tab you must uncheck the *Prefer using the "dita" command* checkbox in order to enable the *Libraries* button.
+![Oxygen 24.0](media/whr-use-oxygen-saxon-24.gif)
 
 
 
