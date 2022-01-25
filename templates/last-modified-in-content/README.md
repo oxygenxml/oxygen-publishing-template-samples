@@ -64,6 +64,7 @@ If you are generating WebHelp Responsive output using a **transformation scenari
 
 #### Oxygen 24.0 update:
 In the *Advanced* tab you must uncheck the *Prefer using the "dita" command* checkbox in order to enable the *Libraries* button.
+
 ![Oxygen 24.0](media/whr-use-oxygen-saxon-24.gif)
 
 
