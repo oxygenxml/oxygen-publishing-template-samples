@@ -2,7 +2,7 @@
 
 This is a sample Publishing Template that uses a custom CSS to layout the links to child topics from each topic as tiles similar with the ones from the main page.
 
-# Prerequisites: 
+## Prerequisites: 
 To generate the _Child Links_ component you must set the _webhelp.show.child.links_ transformation parameter to _yes_. By default this component is not generated in the output. 
 
 ## Input sample: 
