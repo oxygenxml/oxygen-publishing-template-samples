@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publishing-template>
+
+  <name>Custom Font</name>
+  <description>Illustrates how to contribute a custom local font to the WebHelp Responsive output.</description>
+  <webhelp>       
+    <tags>
+      <tag type="other">custom font</tag>
+    </tags>
+    <resources>
+      <css file="css/custom-font.css"/>
+      <!-- Copy ttf font files to the output directory. -->
+      <fileset>
+         <include name="fonts/**/*.ttf"/>
+      </fileset>
+    </resources>
+    <parameters>
+      <parameter name="webhelp.show.main.page.tiles" value="no"/>
+      <parameter name="webhelp.show.main.page.toc" value="yes"/>
+      <parameter name="webhelp.top.menu.depth" value="3"/>
+    </parameters>
+  </webhelp>
+</publishing-template>

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  src: url('../fonts/roboto-mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: italic;
+  src: url('../fonts/roboto-mono/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Roboto Mono',sans-serif;
+}
