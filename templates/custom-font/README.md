@@ -65,3 +65,7 @@ The CSS file can define `@font-face` rules that reference the font files. The fo
     font-family: 'Roboto Mono', sans-serif;
   }
   ```
+
+## Output Sample
+
+![Output sample](readme-resources/output-sample.png "Output Sample")
