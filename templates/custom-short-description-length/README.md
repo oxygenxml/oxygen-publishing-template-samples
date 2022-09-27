@@ -4,7 +4,7 @@ This publishing template allows you to increase the 200 character length for the
 
 To change the value for the maximum number of characters for the short description follow the procedure bellow:
 1. Download the attached zip for the publishing template
-2. Open the {templateLocation}/xsl/custom-shortdesc-length.xsl
+2. Open the xsl/custom-shortdesc-length.xsl
 3. Change the variable value at line 7. In this template the maximum length of the short description is set to 500.
 4. Run the WebHelp transformation with this publishing template.
 
