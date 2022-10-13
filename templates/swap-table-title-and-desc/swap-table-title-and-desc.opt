@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publishing-template>
+  <name>swap-table-title-and-desc</name>
+  <webhelp>
+    <tags>
+      <tag type="other">swap-table-title-and-desc</tag>
+    </tags>
+    <resources>
+      <css file="empty.css"/>
+    </resources>
+    <xslt>
+      <extension file="xsl/swap-table-title-and-desc.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+    </xslt>
+    <parameters>
+      <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+      <parameter name="webhelp.show.main.page.toc" value="no"/>
+    </parameters>
+  </webhelp>
+</publishing-template>
