@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script defer="true" src="${path(oxygen-webhelp-template-dir)}/js/custom-collapsed-sections.js"></script>

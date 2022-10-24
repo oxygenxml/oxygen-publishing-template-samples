@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publishing-template>
+  <name>Template Name</name>
+  <webhelp>       
+    <tags>
+      <tag type="other">custom-collapsed-sections</tag>
+    </tags>
+    <preview-image file="preview-image.png"/>
+    <resources>
+      <css file="empty.css"/>
+      <fileset>
+        <include name="js/custom-collapsed-sections.js"/>
+      </fileset>
+    </resources>
+    <html-fragments>
+      <fragment file="fragments/script.xml" placeholder="webhelp.fragment.head.topic.page"/>
+    </html-fragments>
+    <parameters>
+      <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+      <parameter name="webhelp.show.main.page.toc" value="no"/>
+    </parameters>
+  </webhelp>
+</publishing-template>
