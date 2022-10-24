@@ -3,6 +3,8 @@
 In the WebHelp Responsive output the content of the collapsible elements (subtopics, sections and tables) initially expanded by default.
 The purpose of this custom publishing template is to allow authors to control the initial expanded state of these elements.
 
+![Collapsible elements](media/collapsible-elements.png)
+
 ## Prerequisites
 
 To determine several elements to be initially collapsed you have to set the value of the **@outputclass** attribute to **collapsed**. This value can be set on: 
