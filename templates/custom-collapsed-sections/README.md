@@ -8,8 +8,8 @@ The purpose of this custom publishing template is to allow authors to control th
 To determine several elements to be initially collapsed you have to set the value of the **@outputclass** attribute to **collapsed**. This value can be set on: 
 
 - the root element of a nested topic (e.g.: chunked topics)
-- &lt;section> elements
-- &lt;table> elements
+- *&lt;section>* elements
+- *&lt;table>* elements
 
 Examples:
 ```xml
@@ -53,7 +53,7 @@ const collapse = (toCollapse) => {
         expandBtn.ariaExpanded = "false";
         expandBtn.ariaLabel = "Expand";
 
-        // The node that remains visible whne toggling between the expanded and collapsed state
+        // The node that remains visible when toggling between the expanded and collapsed states
         const titleNode = expandBtn.parentNode;
         
         // Hide title siblings
@@ -67,8 +67,8 @@ const collapse = (toCollapse) => {
     toCollapse.classList.remove(COLLAPSED_CLS);
 };
 ```
-## (!) Important:
-Note that the [JS file](js/custom-collapsed-sections.js) is not directly referenced in the publishing template's [descriptor file](custom-collpased-sections.opt). It is referenced by the [HTML frgament file](html-fragments/script.xml).
+## :bulb: Important:
+Note that the [JS file](js/custom-collapsed-sections.js) is not directly referenced in the publishing template's [descriptor file](custom-collapsed-sections.opt). It is referenced by the [HTML frgament file](fragments/script.xml).
 In order to instruct the publishing template engine to copy the JS file in the output directory, you have to specify a custom ANT-like fileset in the descriptor file that will match the path of the JS file.
 
 ```xml
