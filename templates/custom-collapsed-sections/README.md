@@ -1,13 +1,13 @@
 # Control the initial expand/collapse state  of sections, subtopics and tables
 
-In the WebHelp Responsive output the content of the collapsible elements (subtopics, sections and tables) initially expanded by default.
+In the WebHelp Responsive output the content of the collapsible elements (subtopics, sections and tables) is initially expanded by default.
 The purpose of this custom publishing template is to allow authors to control the initial expanded state of these elements.
 
 ![Collapsible elements](media/collapsible-elements.png)
 
 ## Prerequisites
 
-To determine several elements to be initially collapsed you have to set the value of the **@outputclass** attribute to **collapsed**. This value can be set on: 
+To determine which elements will be initially collapsed you have to set the value of their **@outputclass** attribute to **collapsed**. This value can be set on: 
 
 - the root element of a nested topic (e.g.: chunked topics)
 - *&lt;section>* elements
