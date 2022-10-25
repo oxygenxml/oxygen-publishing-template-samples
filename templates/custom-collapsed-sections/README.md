@@ -69,6 +69,8 @@ const collapse = (toCollapse) => {
     toCollapse.classList.remove(COLLAPSED_CLS);
 };
 ```
+See also: [How to Insert Custom HTML Content](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/wh-add-custom-html.html) 
+
 ## :bulb: Important:
 Note that the [JS file](js/custom-collapsed-sections.js) is not directly referenced in the publishing template's [descriptor file](custom-collapsed-sections.opt). It is referenced by the [HTML frgament file](fragments/script.xml).
 In order to instruct the publishing template engine to copy the JS file in the output directory, you have to specify a custom ANT-like fileset in the descriptor file that will match the path of the JS file.
@@ -88,5 +90,5 @@ In order to instruct the publishing template engine to copy the JS file in the o
   </webhelp>
 </publishing-template>  
 ```
-
+See also: [How to Copy Additional Resources to Output Directory](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-copy-additional-resources.html)
 
