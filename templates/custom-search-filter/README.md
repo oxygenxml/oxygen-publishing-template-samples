@@ -1,68 +1,64 @@
-# Custom search engine 
+# Custom Search Filter 
 
-This is a sample publishing template that overrides WebHelp's search engine and search results area.
+This is a sample publishing template that allows you to filter the search results obtained from the search engine. This sample will show in the search result page only the topics that contains the text "Flowers" in the topic title.
 
-To integrate a custom search engine into your WebHelp Responsive output, follow these steps:
+To integrate a custom search filter into your WebHelp Responsive output, follow these steps:
 
 1. Create a publishing template by following the instructions in the [How to Create a Publishing Template](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html) topic.
 
 2. Create the following items in the folder that contains your publishing descriptor file \(the .opt file\):
+    - A folder named js.
+    - A folder named fragments.
 
-    - A file named **custom-search-results-fragment.xml**.
-    - A file named **custom-search-script-fragment.xml**.
-    - A folder named **js**.
-3. In the **custom-search-results-fragment.xml** file, define the HTML structure that will be used as the search results area. For example:
+3. In the js folder, create a file named search-filter.js
 
-    ```
-    <div id="cumstom-search-results">...</div>
-    ```
-
-    **Note:** The custom search engine script will need to find an HTML element from the HTML structure that will be used as the search results area and write the search results inside it. In this example, it is the <div> element with the id *custom-search-results*.
-
-4. In the **js** folder, create a file named **custom-search.js**.
-
-5. As a starting point, you can copy the following content to the **custom-search.js** file:
+4. As a starting point, you can copy the following content to the search-filter.js file:
 
     ```
-    $(document).ready(function () {
-      const params = new URLSearchParams(window.location.search);
-      const searchQuery = params.get('searchQuery');
-      // Implement your custom search engine
-      // Display the search results
-    });
+    /**
+     * Object that implements the methods required by WebHelp to run a search filter.
+     */
+    function CustomSearchFilter() {
+
+        /**
+         * Method required to run the search filter in webhelp. It is called when the users 
+         * executes the query in the search page. 
+         * 
+         * @param {WebHelpAPI.SearchResult} searchResult The search result for the executed query.
+         *
+         * @return A list of WebHelpAPI.SearchResult objects
+         */
+        this.filterResults = function (searchResult) {
+            // implement filter
+            return filteredResults;
+        }
+    }
+
+    // Set the Search Filter to WebHelp
+    WebHelpAPI.setCustomSearchFilter(new CustomSearchFilter());
     ```
+    **Note:** See the [API Search Objects](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr_how_to_replace_webhelp_search_engine.html#whr_how_to_replace_webhelp_search_engine__section_rsg_vn3_bvb) section for details on how to create a *WebHelpAPI.SearchResult* object.
 
-    **Important:** The value entered by the user in the search page will be available in the URL's query parameters in a parameter named *searchQuery*.
-
-    **Attention:** *URLSearchParams* is not supported on all browsers \(it is used as an example\). A list with the supported browsers can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams#browser_compatibility). A different solution should be used if you need to support other browsers.
-
-6. Implement your custom search engine.
-
-    **Note:** The search results should be pushed into the <div> element created earlier with the id *custom-search-results*.
-
-7. In the **custom-search-script-fragment.xml** file, define the scripts that are required for your custom search engine to run. For example:
+5. Implement your custom search filter.
+6. In the fragments folder, create a file named search-filter-script-fragment.xml.
+7. In the search-filter-script-fragment.xml file, define the scripts that are required for your custom search filter to run. For example:
 
     ```
     <div>
-        <script src="${oxygen-webhelp-template-dir}/js/custom-search.js"></script>
+        <script src="${oxygen-webhelp-template-dir}/js/search-filter.js"></script>
     </div>
     ```
-
-8. Copy the **js** folder to the output folder during the transformation process. For this, open the .opt file and add the following content in the `resources` section \(see [Template Resources](https://www.oxygenxml.com/doc/versions/23.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title3)for more details\):
-
+    
+ 8. Copy the js folder to the output folder during the transformation process. For this, open the .opt file and add the following content in the <resources> section (see Template Resources for more details):
     ```
     <fileset>
       <include name="js/**"/>
     </fileset>
     ```
-
-9. Set the transformation parameters needed to enable the custom search engine. For this, open the .opt file and add the following content inside the `webhelp` element:
-
+ 9. Set the transformation parameters needed to enable the custom search filter. For this, open the .opt file and add the following content inside the <webhelp> element:
     ```
     <html-fragments>
-      <fragment file="custom-search-script-fragment.xml" placeholder="webhelp.fragment.custom.search.engine.script"/>
-      <fragment file="custom-search-results-fragment.xml" placeholder="webhelp.fragment.custom.search.engine.results"/>
+      <fragment file="fragments/search-filter-script-fragment.xml" placeholder="webhelp.fragment.head.search.page"/>
     </html-fragments>
     ```
-
 10. Run the transformation with this publishing template selected.
