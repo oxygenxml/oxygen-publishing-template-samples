@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>multiple-topic-meta-in-body</name>
+    <description>Extratcs a given topic meta from the topic's prolog section and inserts it as a div in the HTML body.
+Applyes CSS styling based on the available topic meta.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="customization/topic-meta-audience.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment placeholder="webhelp.fragment.before.topic.content" file="customization/fragments/topic-meta.xml"/>
+        </html-fragments>
+        <tags>
+            <tag type="other">topic-meta-in-body</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

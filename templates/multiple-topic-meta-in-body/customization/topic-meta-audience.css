@@ -1,0 +1,20 @@
+.audience-container {
+    display: flex;
+    justify-content: start;
+}
+.audience.none {
+    display:none;
+}
+
+.audience {
+  display: block;
+  font-style: italic;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+}
+
+.audience::before {
+  content: "Audience: ";
+}

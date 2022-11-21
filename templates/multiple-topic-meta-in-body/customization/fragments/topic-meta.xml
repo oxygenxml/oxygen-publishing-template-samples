@@ -1,0 +1,5 @@
+<div class="audience-container" xmlns:whc="http://www.oxygenxml.com/webhelp/components">
+    <div class="${topic-xpath(if (count(/*/prolog/metadata/audience) gt 0) then 'audience' else 'audience none')}" >
+        <whc:macro value="${topic-xpath(string-join(/*/prolog/metadata/audience/@type, ', '))}"/>
+    </div>
+</div>
