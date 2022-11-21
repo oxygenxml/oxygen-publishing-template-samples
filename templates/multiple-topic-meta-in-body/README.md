@@ -9,21 +9,23 @@ This is a sample Publishing Template that extracts a given topic meta (e.g.: `au
 ![Output Sample](customization/result/output.png)
 
 ## The HTML Fragment
-The template inserts a custom [HTML fragment](https://www.oxygenxml.com/doc/versions/23.1/ug-webhelp-responsive/topics/wh-add-custom-html.html) before the topic's content. The HTML fragment uses the `topic-xpath` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title7) in order to query the current topic for a certain `metadata`. 
+The template inserts a custom [HTML fragment](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/wh-add-custom-html.html) before the topic's content. The HTML fragment uses the `topic-xpath` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title7) in order to query the current topic for a certain `metadata`. 
 In this case it looks for the `audience` metadata. If there are multiple entries for the `audience`, all values are emitted in the output. 
 
 The [HTML Fragment file](customization/fragments/topic-meta.xml):
-```xml
-<div class="audience ${topic-xpath(/topic/prolog/metadata/audience[1]/@audience)}"/>
-```
-
-The HTML fragment is bound on the `webhelp.fragment.before.body` placeholder (see the [`*.opt`](topic-meta-in-body.opt) file):
 ```xml
 <div class="audience-container" xmlns:whc="http://www.oxygenxml.com/webhelp/components">
     <div class="${topic-xpath(if (count(/*/prolog/metadata/audience) gt 0) then 'audience' else 'audience none')}" >
         <whc:macro value="${topic-xpath(string-join(/*/prolog/metadata/audience/@type, ', '))}"/>
     </div>
 </div>
+```
+
+The HTML fragment is bound on the `webhelp.fragment.before.topic.content` placeholder (see the [`*.opt`](multiple-topic-meta-in-body.opt) file):
+```xml
+<html-fragments>
+    <fragment placeholder="webhelp.fragment.before.topic.content" file="customization/fragments/topic-meta.xml"/>
+</html-fragments>
 ```
 
 The HTML resulted in output:
