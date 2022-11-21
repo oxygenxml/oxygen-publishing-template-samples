@@ -10,7 +10,7 @@ This is a sample Publishing Template that extracts a given topic meta (e.g.: `au
 
 ## The HTML Fragment
 The template inserts a custom [HTML fragment](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/wh-add-custom-html.html) before the topic's content. The HTML fragment uses the `topic-xpath` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title7) in order to query the current topic for a certain `metadata`. 
-In this case it looks for the `audience` metadata. If there are multiple entries for the `audience`, all values are emitted in the output. 
+In this case it looks for the `audience` metadata. If there are multiple `audience` entries, then all their values are emitted in the output. 
 
 The [HTML Fragment file](customization/fragments/topic-meta.xml):
 ```xml
@@ -37,7 +37,7 @@ The HTML resulted in output:
 
 ## The custom CSS: 
 
-The template uses a custom CSS to apply styling on the topic's title based on the available topic meta.
+The template uses a custom CSS to apply styling on the additional HTML content.
 
 ```css
 .audience-container {
