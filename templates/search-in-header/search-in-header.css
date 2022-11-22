@@ -1,7 +1,3 @@
-.wh_header_flex_container .wh_search_input {
-  padding: 0;
-  background: none;
-}
 
 #searchForm > div {
   width: 100%;
@@ -26,9 +22,9 @@
 @media only screen and (min-width : 768px) {
     .wh_top_menu_and_indexterms_link.navbar-collapse {
         display: flex !important;
-        flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
+        justify-content: end;
     }
 
     .wh_header_flex_container {

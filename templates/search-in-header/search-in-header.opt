@@ -13,10 +13,7 @@
             <parameter name="args.tablelink.style" value="TITLE"/>
         </parameters>
         <resources>
-            <css file="oxygen.css"/>
-            <css file="notes.css"/>
             <css file="search-in-header.css"/>
-            <css file="footer-fix.css"/>
             <fileset>
                 <include name="resources/**/*"/>
                 <exclude name="resources/**/*.svn"/>
@@ -30,7 +27,6 @@
             <extension file="xsl/move-search-in-header.xsl" id="com.oxygenxml.webhelp.xsl.createIndexTermsPage"/>
         </xslt>
         <tags>
-            <tag type="other">search</tag>
             <tag type="other">search-in-header</tag>
         </tags>
     </webhelp>
