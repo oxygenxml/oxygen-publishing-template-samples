@@ -70,10 +70,6 @@ The XSLT extension:
 
 The Publishing Template also uses a custom CSS file (`search-in-header.css`) to adjust the layout the *Search Input* component and make it fit into the header section:
 ```css
-.wh_header_flex_container .wh_search_input {
-  padding: 0;
-  background: none;
-}
 
 #searchForm > div {
   width: 100%;
