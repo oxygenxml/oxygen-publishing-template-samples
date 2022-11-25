@@ -8,7 +8,7 @@ To generate the _Child Links_ component you must set the _webhelp.show.child.lin
 ## Input sample: 
 
 - [Single map sample](../../dita/topics-with-tiles/single-map/)
-- [Multi-map smaple](../../dita/topics-with-tiles/multi-map/)
+- [Multi-map sample](../../dita/topics-with-tiles/multi-map/)
 
 ## Output sample:
 ![Output Sample](topic-with-tiles.png)
