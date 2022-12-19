@@ -1,3 +1,9 @@
 .wh_tile {
   cursor: pointer;
 }
+
+/* Emphasize the tile area. */
+.wh_tile {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

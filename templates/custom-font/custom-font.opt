@@ -11,7 +11,7 @@
       <css file="css/custom-font.css"/>
       <!-- Copy ttf font files to the output directory. -->
       <fileset>
-         <include name="fonts/**/*.ttf"/>
+         <include name="fonts/**/*"/>
       </fileset>
     </resources>
     <parameters>

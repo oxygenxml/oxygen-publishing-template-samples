@@ -3,32 +3,19 @@
     <name>click-on-tiles</name>
     <description>Contributes a custom JavaScript that registers a 'click' event handler on each tile that opens the associated link.</description>
     <webhelp>
-        <preview-image file="blue-tiles.png"/>
         <html-fragments>
             <fragment placeholder="webhelp.fragment.after.toc_or_tiles" file="html-fragments/click-on-tiles.xml"/>
         </html-fragments>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
-            <parameter name="webhelp.top.menu.depth" value="3"/>
-            <parameter name="args.figurelink.style" value="TITLE"/>
-            <parameter name="args.tablelink.style" value="TITLE"/>
-            <parameter name="force-unique" value="true"/>
         </parameters>
         <resources>
-            <css file="blue.css"/>
             <css file="tiles.css"/>
-            <fileset>
-                <include name="resources/**/*"/>
-                <exclude name="resources/**/*.svn"/>
-                <exclude name="resources/**/*.git"/>
-            </fileset>
         </resources>
-        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/blue/</online-preview-url>
         <tags>
             <tag type="layout">tiles</tag>
-            <tag type="color">blue</tag>
-            <tag type="color">light</tag>
+            <tag type="other">click-on-tiles</tag>
         </tags>
     </webhelp>
 </publishing-template>
