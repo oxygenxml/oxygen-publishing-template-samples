@@ -26,19 +26,19 @@ The Publishing Template also uses a custom CSS file (`tiles.css`) to set a point
 }
 ```
 
-### How to use the Cutsomization
+## How to use the Cutsomization
 
 To use this customization in your custom Publishing Template you must perform the following steps:
 
-1. Copy the html-fragments/click-on-tiles.xml file in your template's base directory
-1. Reference the XML file in your template's descriptor file (opt) in the &lt;html-fragments> section:
+1. Copy the *html-fragments/click-on-tiles.xml* file in your template's base directory
+1. Reference the XML file in the *&lt;html-fragments>* section of your template's descriptor file (*opt*):
     ```
     <html-fragments>
            <fragment placeholder="webhelp.fragment.after.toc_or_tiles" file="html-fragments/click-on-tiles.xml"/>
         </html-fragments>
     ```
-1. Optionally, you may copy the tiles.css file and reference it in the <css> section of your opt file. Alternatively you can copy the CSS rules from tiles.css into your template's CSS file.
+1. Optionally, you may copy the *tiles.css* file and reference it in the *&lt;css>* section of your *opt* file. Alternatively you can copy the CSS rules from *tiles.css* into your template's CSS file.
 
-**Note:** To create a Publishing Template you must follow the procedure described in[this topic](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
+**Note:** If you haven't created a Publishing Template yet, you can create one by following the procedure described in[this topic](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
 
 
