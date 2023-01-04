@@ -26,7 +26,7 @@ The Publishing Template also uses a custom CSS file (`tiles.css`) to set a point
 }
 ```
 
-## How to use the Cutsomization
+## How to use the Customization
 
 To use this customization in your custom Publishing Template you must perform the following steps:
 
