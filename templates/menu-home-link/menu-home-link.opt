@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>menu-home-link</name>
+    <description>Contributes HTML fragments to insert a home link before the menu.</description>
+    <webhelp>
+        <html-fragments>
+            <fragment placeholder="webhelp.fragment.before.top_menu" file="html-fragments/menu-home-link.xml"/>
+            <fragment placeholder="webhelp.fragment.head" file="html-fragments/material-symbols-icon-font.xml"/>
+        </html-fragments>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="menu-home-link.css"/>
+        </resources>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">menu-home-link</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

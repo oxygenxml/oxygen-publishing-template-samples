@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="menu-home-link">
+    <a href="${oxygen-webhelp-output-dir}/index.html">
+        <span class="home-link-icon material-symbols-outlined"> home </span>
+        <span class="home-link-label">Home</span>
+    </a>
+</div>

@@ -1,0 +1,19 @@
+@media only screen and (min-width : 768px) {
+    .wh_top_menu_and_indexterms_link.navbar-collapse {
+        align-content: center;
+        align-items: center;
+        display: flex !important;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+}
+
+.menu-home-link > a {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Make the Menu Toggle Button visible on narrow screen widths. */
+.wh_toggle_button {
+    background-color: #007bff;
+}
