@@ -1,0 +1,13 @@
+.wh_topic_page .wh_search_input {
+  width: 100%;
+  margin: 0 15px;
+}
+
+.wh_topic_page #searchForm>div {
+  margin: 0;
+}
+
+.wh_topic_page .wh_header {
+  padding-left: 0;
+  padding-right: 0;
+}
