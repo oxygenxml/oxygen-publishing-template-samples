@@ -1,10 +1,10 @@
 # Align Search Input with Breadcrumb
 
-This is a sample publishing template that customizes the layout of the search input and aligns it with the breadcrumb component in each topic page..
+This is a sample publishing template that customizes the layout of the search input and aligns it with the breadcrumb component in each topic page.
 
 ![resources/img/menu-home-link.png](resources/img/search-input.png "Search Input")
 
-The template uses an [XSLT Extension](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) file to modify the nodes hierarch of the Search Component. The Search Component needs to be wrapped with the same node types as the Breadcrumb component in order to facilitate the alignment :
+The template uses an [XSLT Extension](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) file to modify the nodes hierarchy of the Search Component. The Search Component needs to be wrapped with the same node types as the Breadcrumb component in order to facilitate the alignment:
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -42,9 +42,9 @@ The Publishing Template also uses a custom CSS file (`align-search-and-breadcrum
 }
 ```
 
-## How to use the Cutsomization
+## How to use the Customization
 
-To use this customization in your custom Publishing Template you must perform the following steps:
+To use this customization in your Publishing Template you must perform the following steps:
 
 1. Copy the *xslt/search.xsl* file in your template's base directory
 1. Reference the XSL file in the *&lt;xslt>* section of your template's descriptor file (*opt*):
