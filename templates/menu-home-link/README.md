@@ -39,7 +39,7 @@ The Publishing Template also uses a custom CSS file (`menu-home-link.css`) to al
 }
 ```
 
-## How to use the Cutsomization
+## How to use the Customization
 
 To use this customization in your custom Publishing Template you must perform the following steps:
 
