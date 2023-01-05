@@ -6,13 +6,14 @@
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
-            <parameter name="webhelp.enable.template.js.module.loading" value="yes"/>
         </parameters>
+        <html-fragments>
+            <fragment file="html-fragments/insert-js.xml" placeholder="webhelp.fragment.head.topic.page"/>
+        </html-fragments>
         <resources>
             <css file="empty.css"/>
-            <js-amd-module file="js/template-main.js"/>
             <fileset>
-                <include name="js/**"></include>
+                <include name="js/**"/>
             </fileset>
         </resources>
         <tags>
