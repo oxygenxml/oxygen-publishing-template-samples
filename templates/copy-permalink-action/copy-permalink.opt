@@ -3,33 +3,21 @@
     <name>Copy Permalink</name>
     <description>Publishing template that adds the copy URL action to the permalink icon.</description>
     <webhelp>
-        <preview-image file="blue-tiles.png"/>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
-            <parameter name="webhelp.top.menu.depth" value="3"/>
-            <parameter name="args.figurelink.style" value="TITLE"/>
-            <parameter name="args.tablelink.style" value="TITLE"/>
-            <parameter name="force-unique" value="true"/>
             <parameter name="webhelp.enable.template.js.module.loading" value="yes"/>
         </parameters>
         <resources>
-            <css file="blue.css"/>
+            <css file="empty.css"/>
             <js-amd-module file="js/template-main.js"/>
-            <fileset>
-                <include name="resources/**/*"/>
-                <exclude name="resources/**/*.svn"/>
-                <exclude name="resources/**/*.git"/>
-            </fileset>
             <fileset>
                 <include name="js/**"></include>
             </fileset>
         </resources>
-        <online-preview-url>https://www.oxygenxml.com/samples/DITA-WebHelp-Responsive/tiles/blue/</online-preview-url>
         <tags>
             <tag type="layout">tiles</tag>
-            <tag type="color">blue</tag>
-            <tag type="color">light</tag>
+            <tag type="other">copy-permalink-action</tag>
         </tags>
     </webhelp>
 </publishing-template>
