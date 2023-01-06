@@ -1,6 +1,6 @@
 # Copy Permalink
 
-This is a sample publishing template that contributes a custom JavaScript that registers a custom 'click' event handler on the permalink button.
+This is a sample publishing template that contributes a custom JavaScript that registers a custom 'click' event handler on the *permalink* button.
 
 It uses an [HTML Fragment](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/wh-add-custom-html.html) that references:
 1. the custom Javascript file (*js/copy-permalink.js*).
