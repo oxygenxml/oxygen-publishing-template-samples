@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>codeblock-line-numbering</name>
+    <description>Adds line numbering to code blocks.</description>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="codeblock-line-numbering.css"/>
+        </resources>
+        <xslt>
+            <extension file="xslt/codeblock-line-numbering.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">codeblock-line-numbering</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

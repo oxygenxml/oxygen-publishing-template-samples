@@ -1,0 +1,18 @@
+.codeblock {
+  counter-reset: codeblock-line-number;
+}
+
+.codeblock-new-line {
+  display: inline-block;
+  min-width: 2em;
+  border-right: 1px solid #ccc;
+  text-align: right;
+  padding-right: 2px;
+  margin-right: 4px;
+}
+
+.codeblock-new-line::before {
+  color: initial;
+  counter-increment: codeblock-line-number;
+  content: counter(codeblock-line-number);
+}
