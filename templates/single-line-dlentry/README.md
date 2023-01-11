@@ -1,10 +1,10 @@
 # Single Line dlentry (dd & dt)
 
-This is a sample publishing template that customizes the layout of a <dl> section to display each pair of <dt> & <dd> on a single line.
+This is a sample publishing template that customizes the layout of a `<dl>` section to display each pair of `<dt>` & `<dd>` on a single line.
 
 ![resources/img/single-line-dlentry.png](resources/img/single-line-dlentry.png "dt & dd on a single line")
 
-The Publishing Template uses a custom CSS file (`single-line-dlentry.css`) to adjust the layout of the <dl> section.
+The Publishing Template uses a custom CSS file (`single-line-dlentry.css`) to adjust the layout of the `<dl>` section.
 ```css
 dl {
   display:flex;
