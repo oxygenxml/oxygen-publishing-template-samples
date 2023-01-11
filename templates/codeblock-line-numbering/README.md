@@ -4,7 +4,7 @@ This is a sample publishing template that improves the display of code blocks by
 
 ![resources/img/codeblock-line-numbering.png](resources/img/codeblock-line-numbering.png "Code Block Line Numbering")
 
-The template uses an [XSLT Extension](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) file to modify the HTML5 structure generated for the code block. Each new line of code is preceded by a `&lt;span>` node that is used to display the current line number.
+The template uses an [XSLT Extension](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) file to modify the HTML5 structure generated for the code block. Each new line of code is preceded by a `<span>` node that is used to display the current line number.
 
 ```xml
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
