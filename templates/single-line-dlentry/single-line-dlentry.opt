@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>single-line-dlentry</name>
+    <description>Aligns the Search Input with the Breadcrumb in the topic pages.</description>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="single-line-dlentry.css"/>
+        </resources>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">single-line-dlentry</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
