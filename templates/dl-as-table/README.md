@@ -5,7 +5,7 @@ This is a sample publishing template that customizes the HTML structure generate
 **Note:** The *dlentries* in a DITA *dl* should be balanced (they should have similar number of *dds* and *dts*) in order to have a balanced table (that has the same number of cells on each row).
 The DITA *dl* is transformed into an HTML table as follows:
 
-- Each *dl* generated a table element
+- Each *dl* generates a table element
 - Each *dlentry* generates a table row (*tr*)
 - Each *dl* or *dt* generates a table cell (*td*)
 
