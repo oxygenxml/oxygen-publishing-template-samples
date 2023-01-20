@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>dl-as-table</name>
+    <description>Displays a &lt;dl> as table.</description>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="dl-as-table.css"/>
+        </resources>
+        <xslt>
+            <extension file="xslt/dl-as-table.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="other">dl-as-table</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
