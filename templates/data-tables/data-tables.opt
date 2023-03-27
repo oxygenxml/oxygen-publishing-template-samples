@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
-    <name>DataTables</name>
+    <name>data-tables</name>
     <description>Template that uses the DataTables jQuery plugin.
 
 https://datatables.net/</description>
     <webhelp>
-        <preview-image file="ashes-tiles.png"/>
         <parameters>
             <parameter name="webhelp.show.main.page.tiles" value="yes"/>
             <parameter name="webhelp.show.main.page.toc" value="no"/>
-            <parameter name="webhelp.top.menu.depth" value="3"/>
-            <parameter name="args.figurelink.style" value="TITLE"/>
-            <parameter name="args.tablelink.style" value="TITLE"/>
-            <parameter name="force-unique" value="true"/>
         </parameters>
         <resources>
-            <css file="ashes.css"/>
+            <css file="empty.css"/>
             <!-- Uncomment the following lines in order to use a local version of the DataTables library. -->
             <!--<fileset>
                 <include name="DataTables/**/*"/>
@@ -23,11 +18,10 @@ https://datatables.net/</description>
         </resources>
         <tags>
             <tag type="layout">tiles</tag>
-            <tag type="color">dark</tag>
             <tag type="other">data-tables</tag>
         </tags>
         <html-fragments>
-            <fragment file="fragment.xml" placeholder="webhelp.fragment.head"/>
+            <fragment file="data-tables-script-fragment.xml" placeholder="webhelp.fragment.head"/>
         </html-fragments>
     </webhelp>
 </publishing-template>
