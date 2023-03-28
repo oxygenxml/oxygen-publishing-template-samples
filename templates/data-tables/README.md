@@ -1,7 +1,9 @@
 # *DataTables* JQuery Plug-in
 
 This is a sample publishing template that customizes the WebHelp tables using the *[DataTables](https://datatables.net/)* JQuery plug-in. 
+
 *DataTables* is a third party JavaScrip library available at: [https://datatables.net/](https://datatables.net/)
+
 It adds sorting and filtering capabilities to HTML tables:
 
 ![resources/img/filetered-sorted-table.png](resources/img/filetered-sorted-table.png "Sortable and Filterable Table")
@@ -41,8 +43,6 @@ To use this customization in your custom Publishing Template you must perform th
        <fragment placeholder="webhelp.fragment.head" file="html-fragments/data-tables-script-fragment.xml"/>
     </html-fragments>
     ```
-1. Optionally, you may copy the *tiles.css* file and reference it in the *&lt;css>* section of your *opt* file. Alternatively you can copy the CSS rules from *tiles.css* into your template's CSS file.
-
 **Note:** If you haven't created a Publishing Template yet, you can create one by following the procedure described in [this topic](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
 
 
