@@ -2,7 +2,7 @@
 
 This is a sample publishing template that customizes the WebHelp tables using the *[DataTables](https://datatables.net/)* JQuery plug-in. 
 
-*DataTables* is a third party JavaScrip library available at: [https://datatables.net/](https://datatables.net/)
+*DataTables* is a third party JavaScript library available at: [https://datatables.net/](https://datatables.net/)
 
 It adds sorting and filtering capabilities to HTML tables:
 
