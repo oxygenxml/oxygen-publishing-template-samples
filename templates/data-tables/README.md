@@ -35,7 +35,7 @@ To use this customization in your custom Publishing Template you must perform th
 
 1. Copy the *html-fragments/data-tables-script-fragment.xml* file in your template's base directory
 1. Reference the XML file in the *&lt;html-fragments>* section of your template's descriptor file (*opt*):
-    ```
+    ```xml
     <html-fragments>
        <fragment placeholder="webhelp.fragment.head" file="html-fragments/data-tables-script-fragment.xml"/>
     </html-fragments>
