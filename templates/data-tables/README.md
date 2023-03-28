@@ -14,9 +14,6 @@ The HTML Fragment:
 ```xml
 <html>
     <head>
-        <!-- The DataTables library (for local use please uncomment the following lines) -->
-        <!--<link rel="stylesheet" type="text/css" href="${oxygen-webhelp-template-dir}/DataTables/datatables.min.css"/>-->
-        <!--<script src="${oxygen-webhelp-template-dir}/DataTables/jquery.dataTables.min.js" defer="true"/>-->
         <link rel="stylesheet" type="text/css"
             href="http://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
         <script src="http://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js" defer="true"/>
