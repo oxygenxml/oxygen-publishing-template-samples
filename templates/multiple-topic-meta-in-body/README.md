@@ -1,4 +1,5 @@
 # Insert Multiple Topic Meta before Topic Title
+**_(!) Note:_** _This template requires Oxygen WebHelp 23.1 or later._
 
 This is a sample Publishing Template that extracts a given topic meta (e.g.: `audience`) from the topic's `prolog` section and inserts it as a `div` in the output HTML file, before the topic's title.
 
@@ -22,6 +23,9 @@ The [HTML Fragment file](customization/fragments/topic-meta.xml):
 ```
 
 The HTML fragment is bound on the `webhelp.fragment.before.topic.content` placeholder (see the [`*.opt`](multiple-topic-meta-in-body.opt) file):
+
+**_(!) Note:_** _The `webhelp.fragment.before.topic.content` parameter is available starting with version 23.1 of Oxygen WebHelp._
+
 ```xml
 <html-fragments>
     <fragment placeholder="webhelp.fragment.before.topic.content" file="customization/fragments/topic-meta.xml"/>
