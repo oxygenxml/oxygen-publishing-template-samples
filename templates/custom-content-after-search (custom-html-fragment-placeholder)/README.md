@@ -2,7 +2,7 @@
 
 This is a sample publishing template that contributes custom HTML content after the search input.
 
-![Output Sample](search.png)
+![Output Sample](media/search.png)
 
 It uses an 
 [XSLT Extension](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/whr-responsive-override-xslt-dita-xslt-import.html) file to customize the structure of the `search component`.
