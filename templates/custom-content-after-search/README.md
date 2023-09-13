@@ -43,11 +43,11 @@ To use this customization in your Publishing Template you must perform the follo
 
 1. Copy the *fragments/after-search-fragment.xml* file in the *fragments* sub-folder of your template's base directory
 1. Reference the file in the *&lt;html-fragments>* section of your template's descriptor file (*opt*):
-```xml
-<html-fragments>
-    <fragment file="fragments/after-search-fragment.xml" placeholder="webhelp.fragment.after.search.input"/>
-</html-fragments>
-```
+    ```xml
+    <html-fragments>
+        <fragment file="fragments/after-search-fragment.xml" placeholder="webhelp.fragment.after.search.input"/>
+    </html-fragments>
+    ```
 1. Copy the *search.css* file and reference it in the *&lt;css>* section of your *opt* file. Alternatively you can copy the CSS rules from *search.css* into your template's CSS file.
 
 **Note:** If you haven't created a Publishing Template yet, you can create one by following the procedure described in [this topic](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
