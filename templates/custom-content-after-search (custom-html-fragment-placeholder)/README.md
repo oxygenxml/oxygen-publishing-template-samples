@@ -9,7 +9,7 @@ It uses an
 
 The XSLT extension loads the
 [HTML Fragment](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/wh-add-custom-html.html#wh-add-custom-html__the_xml_file) that needs to be inserted in the output page from an XML file (`after-search-fragment.xml`)  using a custom transformation parameter (`custom.webhelp.after.search.fragment`) defined in the 
-[Publishing Template's Descriptor File](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title2) (`\*.opt`).
+[Publishing Template's Descriptor File](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#ariaid-title2) (`*.opt`).
 
 The XSLT extension (`xsl/custom-content-after-search.xsl`):
 ```xml
