@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>custom-content-after-search</name>
+    <description>Sample publishing template that contributes custom HTML content after the search input.</description>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.show.child.links" value="yes"/>
+        </parameters>
+        <resources>
+            <css file="search.css"/>
+        </resources>
+        <html-fragments>
+            <fragment file="fragments/after-search-fragment.xml" placeholder="webhelp.fragment.after.search.input"/>
+        </html-fragments>
+        <tags>
+            <tag type="other">custom-content-after-search</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
