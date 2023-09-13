@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>custom-html-fragment-placeholder</name>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <!-- AFTER SEARCH FRAGMENT param - expanded in 'xsl/custom-content-after-search.xsl'  -->
+            <parameter name="custom.webhelp.after.search.fragment" value="fragments/after-search-fragment.xml" type="filePath"/>
+        </parameters>
+        <xslt>
+            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.createMainPage"/>
+            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.createSearchPage"/>
+            <extension file="xsl/custom-content-after-search.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <resources>
+            <css file="search.css"/>
+        </resources>
+        <tags>
+            <tag type="other">custom-html-fragment-placeholder</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
