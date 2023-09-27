@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>custom-content-after-search</name>
+    <description>Sample publishing template that contributes custom HTML content after the search input.</description>
+    <webhelp>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.show.child.links" value="yes"/>
+        </parameters>
+        <resources>
+            <css file="search.css"/>
+        </resources>
+        <html-fragments>
+            <fragment file="fragments/after-breadcrumb-fragment.xml" placeholder="webhelp.fragment.after.topic.toolbar"/>
+        </html-fragments>
+        <xslt>
+            <extension file="xsl/search-after-breadcrumb.xsl" id="com.oxygenxml.webhelp.xsl.dita2webhelp"/>
+        </xslt>
+        <tags>
+            <tag type="other">search-after-breadcrumb</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

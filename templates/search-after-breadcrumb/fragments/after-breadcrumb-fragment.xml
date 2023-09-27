@@ -1,0 +1,9 @@
+<whc:webhelp_search_input  xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="navbar-form wh_topic_page_search search" role="form">
+    <whc:include_html href="${webhelp.fragment.before.search.input}"/>
+    <whc:include_html href="${webhelp.fragment.before.search.input.topic.page}"/>
+    
+    <whc:component_content/>
+    
+    <whc:include_html href="${webhelp.fragment.after.search.input}"/>
+    <whc:include_html href="${webhelp.fragment.after.search.input.topic.page}"/>
+</whc:webhelp_search_input>

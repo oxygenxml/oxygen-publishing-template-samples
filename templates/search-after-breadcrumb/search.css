@@ -1,0 +1,7 @@
+.wh_tools {
+  flex-wrap: wrap;
+}
+
+.wh_tools > .wh_search_input {
+  width: 100%;
+}
