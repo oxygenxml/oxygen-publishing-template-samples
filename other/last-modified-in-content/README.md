@@ -1,4 +1,4 @@
-# Last modified date & time after the topic content (tested against v. 26.0)
+# Last modified date & time after the topic content (tested with Oxygen 26.0)
 
 ## !!! NOTE: This template is not compatible with versions 25.0 and 25.1 of Oxygen
 
