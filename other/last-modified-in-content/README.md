@@ -60,6 +60,9 @@ If you are generating WebHelp Responsive output using a **transformation scenari
 1. Add the `${oxygenHome}/lib/*saxon*12*.jar` entry at the top of the list. (Click on Up arrow button on the right until the selected entry reaches the top of the list)
 1. Save the transformation scenario
 
+![Use Saxon EE bundled in Oxygen XML Editor 26.0](media/whr-use-oxygen-saxon-26.gif)
+
+
 
 
 
