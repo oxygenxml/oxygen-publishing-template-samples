@@ -1,4 +1,6 @@
-# Last modified date & time after the topic content
+# Last modified date & time after the topic content (tested against v. 26.0)
+
+## !!! NOTE: This template is not compatible with versions 25.0 and 25.1 of Oxygen
 
 This is a sample publishing template that displays the last modified date and time of the source topic.
 
@@ -52,20 +54,11 @@ If you are generating WebHelp Responsive output using a **transformation scenari
 1. In the DITA Map Manager View click the Configure Transformation Scenario(s) icon on the view's toolbar.
 1. Edit your copy of DITA Map WebHelp Responsive transformation scenario.
 1. Go to Advanced tab
-1. **[Oxygen 24.0+]**: Uncheck *Prefer using the "dita" command*
+1. Uncheck *Prefer using the "dita" command*
 1. Click on Libraries button
 1. Uncheck Allow Oxygen to add high priority libraries to the classpath
-1. Scroll down the list
-1. Select the `${oxygenHome}/lib/*saxon*9*.jar` entry
-1. Click on Up arrow button on the right until the selected entry reaches the top of the list
+1. Add the `${oxygenHome}/lib/*saxon*12*.jar` entry at the top of the list. (Click on Up arrow button on the right until the selected entry reaches the top of the list)
 1. Save the transformation scenario
-
-![Use Oxygen's bundled Saxon EE](media/whr-use-oxygen-saxon.gif)
-
-#### Oxygen 24.0 update:
-In the *Advanced* tab you must uncheck the *Prefer using the "dita" command* checkbox in order to enable the *Libraries* button.
-
-![Oxygen 24.0](media/whr-use-oxygen-saxon-24.gif)
 
 
 
