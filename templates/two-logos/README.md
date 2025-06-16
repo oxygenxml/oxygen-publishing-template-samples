@@ -1,4 +1,4 @@
-# Two Logos Temeplate
+# Two Logos Template
 This template adds a logo image to each side of the HTML page header. 
 
 ![../../resources/2logos.png](../../resources/2logos.png)
