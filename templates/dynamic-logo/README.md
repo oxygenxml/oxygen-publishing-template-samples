@@ -12,16 +12,15 @@ The logo path must be relative to the main ditamap:
 </map>
 ```
 
-The XML fragment uses the path macro to relativize the image to the current topic:
+The XML fragment uses the path macro to relativize URLs to the current topic:
 ```
 <div xmlns:whc="http://www.oxygenxml.com/webhelp/components" class="header-container">
   <div class="header">
     <div class="header-logo custom-logo">
-      <a href="index.html">
+      <a href="${path(oxygen-webhelp-output-dir)}/index.html">
         <img src="${path(oxygen-webhelp-output-dir)}/${map-xpath(/map/topicmeta/data/image[@outputclass='header-img']/@href)}"/>
       </a>
     </div>
   </div>
 </div>
-
 ```
