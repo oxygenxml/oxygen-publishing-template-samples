@@ -1,4 +1,4 @@
-# Process Cutom Metadata (`<othermeta>`) in Topic Content
+# Process Custom Metadata (`<othermeta>`) in Topic Content
 
 This is a sample publishing template that processes custom metadata in each topic.
 
