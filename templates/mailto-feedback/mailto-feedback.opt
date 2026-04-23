@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>Send Feedback Email</name>
+    <description>Publishing template that adds a link to send feedback emails.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="footer.css"/>
+            <fileset>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment file="fragment/footer.xml" placeholder="webhelp.fragment.footer"/>
+        </html-fragments>
+    </webhelp>
+</publishing-template>
