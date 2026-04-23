@@ -1,7 +1,7 @@
 <div>
   <div class="mail_feedback">
     <span>
-      <a href="mailto:someone@oxygenxml.com">Give us feedback</a>
+      <a>Give us feedback</a>
     </span>
   </div>
   
@@ -21,8 +21,8 @@
       
       const subject = encodeURIComponent(subjectText);
       
-      document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-        link.href = `mailto:someone@example.com?subject=${subject}`;
+      document.querySelectorAll('.mail_feedback a').forEach(link => {
+        link.href = `mailto:someone@oxygenxml.com?subject=${subject}`;
       });
     -->
   </script>
