@@ -5,12 +5,12 @@ This is a sample Publishing Template that extratcs the root map ID attribute and
 ## The HTML Fragment
 The template inserts a custom [HTML fragment](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/wh-add-custom-html.html) at the begining of the HTML `body` element. The HTML fragment uses the `map-xpath` [WebHelp Responsive Macro](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr_publishing_template_contents.html#id_svt_4c1_c2b__macro_map-xpath) in order to query the root map for its ID.
 
-The [HTML Fragment file](customization/fragments/topic-meta.xml):
+The [HTML Fragment file](customization/fragments/map-id.xml):
 ```xml
 <div id="${map-xpath(/*/@id)}"/>
 ```
 
-The HTML fragment is bound on the `webhelp.fragment.before.body` placeholder (see the [`*.opt`](topic-meta-in-body.opt) file):
+The HTML fragment is bound on the `webhelp.fragment.before.body` placeholder (see the [`*.opt`](map-id-in-body.opt) file):
 ```xml
 <html-fragments>
     <fragment placeholder="webhelp.fragment.before.body" file="customization/fragments/map-id.xml"/>
