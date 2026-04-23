@@ -1,0 +1,17 @@
+@media screen {
+  #green ~ * {
+    --wh-search-input-bg: #008000;
+    --wh-shortdesc-color: #008000;
+  }
+}
+
+@media screen {
+  #blue ~ * {
+    --wh-search-input-bg: #0000ff;
+    --wh-shortdesc-color: #0000ff;
+  }
+}
+
+.shortdesc {
+  color: var(--wh-shortdesc-color);
+}
