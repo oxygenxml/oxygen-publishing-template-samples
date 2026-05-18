@@ -22,7 +22,7 @@
             <fragment placeholder="webhelp.fragment.before.topic.content" file="fragments/image-map-highlight.html"/>
         </html-fragments>
         <tags>
-            <tag type="other">map-id-in-body</tag>
+            <tag type="other">image-map-highlight-customization</tag>
         </tags>
     </webhelp>
 </publishing-template>
