@@ -16,3 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 ```
+
+The result is a wider blue line around the selected area:
+![image-map-highlight.png](image-map-highlight.png)
