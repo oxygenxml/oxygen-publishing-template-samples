@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="audience-container">
+  <label class="lang-label" for="audiences">Audience:</label>
+  <select id="audiences" class="audiences-selector">
+    <option value="all" selected="true">All</option>
+    <option value="expert">Expert</option>
+    <option value="novice">Novice</option>
+  </select>
+  <script>
+    <![CDATA[
+    (function () {
+      function init() {
+        var select = document.getElementById('audiences');
+        if (!select) return;
+        select.addEventListener('change', function () {
+          var selected = this.value;
+          document.querySelectorAll('[data-audience]').forEach(function (el) {
+            el.style.display =
+              selected === 'all' || el.getAttribute('data-audience') === selected
+                ? ''
+                : 'none';
+          });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+    ]]>
+  </script>
+</div>

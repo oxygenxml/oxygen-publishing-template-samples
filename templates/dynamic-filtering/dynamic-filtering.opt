@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>dynamic-filtering</name>
+    <description>Changes image map highlight colors and styles.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="custom.css"/>
+            <fileset>
+                <include name="js/**"/>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment file="fragments/after-menu.xml" placeholder="webhelp.fragment.after.top_menu"/>
+        </html-fragments>
+        <tags>
+            <tag type="other">image-map-highlight-customization</tag>
+        </tags>
+    </webhelp>
+</publishing-template>
