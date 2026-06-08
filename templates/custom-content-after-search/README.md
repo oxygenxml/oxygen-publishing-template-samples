@@ -95,4 +95,4 @@ To use this customization in your Publishing Template you must perform the follo
         ...
     ```
 
-    And the menu will switch between the languages.
+    And the menu will switch between the languages by calling the function.
