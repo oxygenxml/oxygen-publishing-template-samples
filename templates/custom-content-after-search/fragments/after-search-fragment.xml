@@ -3,10 +3,40 @@
     <div class="language-container">
         <label class="lang-label" for="languages">Language:</label>
         <select id="languages" class="lang-selector">
-            <option value="en" selected="true">English</option>
+            <option value="en">English</option>
             <option value="fr">Français</option>
             <option value="es">Español</option>
             <option value="de">Deutsch</option>
-        </select>  
+        </select>
     </div>
+    <script>
+        <!--
+(function () {
+    var select = document.querySelector('.after-search #languages');
+    if (!select) return;
+
+    var langs = Array.prototype.map.call(select.options, function (o) { return o.value; });
+    var parts = window.location.pathname.split('/');
+
+    var langIndex = -1;
+    for (var i = 0; i < parts.length; i++) {
+        if (langs.indexOf(parts[i]) !== -1) {
+            langIndex = i;
+            break;
+        }
+    }
+
+    if (langIndex !== -1) {
+        select.value = parts[langIndex];
+    }
+
+    select.addEventListener('change', function () {
+        if (langIndex === -1) return;
+        var newParts = parts.slice();
+        newParts[langIndex] = this.value;
+        window.location.href = newParts.join('/');
+    });
+}());
+-->
+    </script>
 </div>

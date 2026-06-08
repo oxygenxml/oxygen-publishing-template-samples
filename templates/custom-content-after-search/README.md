@@ -1,6 +1,6 @@
 # Custom Content After Search Template
 
-This is a sample publishing template that inserts a custom [HTML Fragment](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/wh-add-custom-html.html#wh-add-custom-html__the_xml_file) after the search input of each output page.
+This is a sample publishing template that inserts a custom [HTML Fragment](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/wh-add-custom-html.html#wh-add-custom-html__the_xml_file) after the search input of each output page.
 
 ![Output Sample](media/search.png)
 
@@ -10,13 +10,42 @@ The HTML Fragment (`fragments/after-search-fragment.xml`):
     <div class="language-container">
         <label class="lang-label" for="languages">Language:</label>
         <select id="languages" class="lang-selector">
-            <option value="en" selected="true">English</option>
+            <option value="en">English</option>
             <option value="fr">Français</option>
             <option value="es">Español</option>
             <option value="de">Deutsch</option>
         </select>  
     </div>
 </div>
+```
+The JavaScript function from the HTML Fragment:
+```javascript
+(function () {
+    var select = document.querySelector('.after-search #languages');
+    if (!select) return;
+
+    var langs = Array.prototype.map.call(select.options, function (o) { return o.value; });
+    var parts = window.location.pathname.split('/');
+
+    var langIndex = -1;
+    for (var i = 0; i < parts.length; i++) {
+        if (langs.indexOf(parts[i]) !== -1) {
+            langIndex = i;
+            break;
+        }
+    }
+
+    if (langIndex !== -1) {
+        select.value = parts[langIndex];
+    }
+
+    select.addEventListener('change', function () {
+        if (langIndex === -1) return;
+        var newParts = parts.slice();
+        newParts[langIndex] = this.value;
+        window.location.href = newParts.join('/');
+    });
+}());
 ```
 The Publishing Template also uses a custom CSS file (`search.css`) to style the inserted fragment next to the search component:
 ```css
@@ -42,13 +71,28 @@ The Publishing Template also uses a custom CSS file (`search.css`) to style the 
 To use this customization in your Publishing Template you must perform the following steps:
 
 1. Copy the *fragments/after-search-fragment.xml* file in the *fragments* sub-folder of your template's base directory
-1. Reference the file in the *&lt;html-fragments>* section of your template's descriptor file (*opt*):
+2. Reference the file in the *&lt;html-fragments>* section of your template's descriptor file (*opt*):
     ```xml
     <html-fragments>
         <fragment file="fragments/after-search-fragment.xml" placeholder="webhelp.fragment.after.search.input"/>
     </html-fragments>
     ```
-1. Copy the *search.css* file and reference it in the *&lt;css>* section of your *opt* file. Alternatively you can copy the CSS rules from *search.css* into your template's CSS file.
+3. Copy the *search.css* file and reference it in the *&lt;css>* section of your *opt* file. Alternatively you can copy the CSS rules from *search.css* into your template's CSS file.
 
-**Note:** If you haven't created a Publishing Template yet, you can create one by following the procedure described in [this topic](https://www.oxygenxml.com/doc/versions/25.1/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
+    **Note:** If you haven't created a Publishing Template yet, you can create one by following the procedure described in [this topic](https://www.oxygenxml.com/doc/ug-webhelp-responsive/topics/whr-create-publishing-template-x.html).
 
+4. Publish your content, the output directory should look like this:
+
+    ```
+    webhelp-responsive
+      en
+        ...
+      fr
+        ...
+      es
+        ...
+      de
+        ...
+    ```
+
+    And the menu will switch between the languages.
