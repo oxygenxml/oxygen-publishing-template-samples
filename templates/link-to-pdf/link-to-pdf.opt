@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>link-to-pdf</name>
+    <description>Adds a link to the PDF version of the online help.</description>
+    <webhelp>
+        <preview-image file="oxygen-tiles.png"/>
+        <parameters>
+            <parameter name="webhelp.show.main.page.tiles" value="yes"/>
+            <parameter name="webhelp.show.main.page.toc" value="no"/>
+            <parameter name="webhelp.pdf.link.text" value="PDF"/>
+            <parameter name="webhelp.pdf.link.url" value="https://www.oxygenxml.com/doc/brochures/Flyer_WebHelp.pdf"/>
+            <parameter name="webhelp.pdf.link.icon.path" value="${path(oxygen-webhelp-template-dir)}/resources/images/pdf-icon.png"/>
+        </parameters>
+        <resources>
+            <css file="oxygen.css"/>
+            <css file="notes.css"/>
+            <css file="custom.css"/>
+            <fileset>
+                <include name="js/**"/>
+                <include name="resources/**/*"/>
+                <exclude name="resources/**/*.svn"/>
+                <exclude name="resources/**/*.git"/>
+            </fileset>
+        </resources>
+        <html-fragments>
+            <fragment file="fragments/after-menu.xml" placeholder="webhelp.fragment.after.top_menu"/>
+        </html-fragments>
+        <tags>
+            <tag type="other">link-to-pdf</tag>
+        </tags>
+    </webhelp>
+</publishing-template>

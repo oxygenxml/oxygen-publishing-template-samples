@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="pdf-link-container">
+  <a class="pdf-link" href="${param(webhelp.pdf.link.url)}" title="${param(webhelp.pdf.link.text)}"
+    aria-label="${param(webhelp.pdf.link.text)}" rel="noopener" target="_blank">
+    <img src="${param(webhelp.pdf.link.icon.path)}" alt="${param(webhelp.pdf.link.text)}"/>
+  </a>
+</div>
