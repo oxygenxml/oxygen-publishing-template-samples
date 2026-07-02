@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <publishing-template>
     <name>dynamic-filtering</name>
-    <description>Changes image map highlight colors and styles.</description>
+    <description>Filters the topics content based on the audiences.</description>
     <webhelp>
         <preview-image file="oxygen-tiles.png"/>
         <parameters>
@@ -23,7 +23,7 @@
             <fragment file="fragments/after-menu.xml" placeholder="webhelp.fragment.after.top_menu"/>
         </html-fragments>
         <tags>
-            <tag type="other">image-map-highlight-customization</tag>
+            <tag type="other">dynamic-filtering</tag>
         </tags>
     </webhelp>
 </publishing-template>
