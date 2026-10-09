@@ -1,5 +1,7 @@
 # Copy Permalink
 
+**Note:** Starting with Oxygen WebHelp version 29.0, clicking a permalink copies its URL to the clipboard by default. This sample template is only needed for older versions.
+
 This is a sample publishing template that contributes a custom JavaScript that registers a custom 'click' event handler on the *permalink* button.
 
 It uses an [HTML Fragment](https://www.oxygenxml.com/doc/versions/25.0/ug-webhelp-responsive/topics/wh-add-custom-html.html) that references:
